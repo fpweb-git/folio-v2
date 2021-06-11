@@ -1,15 +1,15 @@
 <template>
     <section class="bg-dark w-full">
-        <div class="main-container px-3 pt-20 flex justify-between items-center">
+        <div class="main-container px-4 pt-6 lg:pt-20 flex flex-col lg:flex-row justify-between items-center">
             <div class="max-w-xl">
-                <h1 class="text-white font-extrabold text-6xl">
-                    <span class="text-lime text-lg inline-block mb-1">François Parrou</span><br>
+                <h1 class="text-white font-extrabold text-4xl sm:text-6xl">
+                    <span class="text-lime text-lg inline-block mb-1 hero-lime-text">François Parrou</span><br>
                     Developpeur web<br>
-                    Jamstack
+                    Vue.js, Jamstack
                 </h1>
-                <p class="text-white text-lg my-8">Je developpe des sites web <strong class="text-lime">modernes</strong> et <strong class="text-lime">rapides</strong> en utilisant les  dernieres technologies innovantes.</p>
-                <button aria-label="contact" class="lime-btn mb-8">Contactez-moi</button>
-                <div class="flex space-x-6 mb-20">
+                <p class="text-white text-base sm:text-lg my-8">Je developpe des sites web <strong class="text-lime hero-lime-text">modernes</strong> et <strong class="text-lime hero-lime-text">rapides</strong> en utilisant les dernieres technologies innovantes.</p>
+                <button aria-label="contact" class="lime-btn mb-8 hero-btn">Contactez-moi</button>
+                <div class="flex space-x-6 mb-10 sm:mb-20">
                     <a href="https://www.linkedin.com/in/fran%C3%A7ois-parrou-21367b56/" target="_blank" rel="noopener" title="lien linkedin" >
                         <svg width="18" height="20" viewBox="0 0 18 20" fill="none" class="fill-current text-white text-opacity-70 hover:text-opacity-100 transition ease duration-300" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4.02911 17.1819H0.297321V5.71076H4.02911V17.1819ZM2.16121 4.14599C0.967902 4.14599 0 3.20252 0 2.06346C8.54116e-09 1.51632 0.227698 0.991599 0.633002 0.604718C1.03831 0.217836 1.58802 0.000488281 2.16121 0.000488281C2.73439 0.000488281 3.2841 0.217836 3.68941 0.604718C4.09471 0.991599 4.32241 1.51632 4.32241 2.06346C4.32241 3.20252 3.35411 4.14599 2.16121 4.14599ZM17.996 17.1819H14.2722V11.5978C14.2722 10.267 14.2441 8.56033 12.332 8.56033C10.3918 8.56033 10.0945 10.0062 10.0945 11.502V17.1819H6.3667V5.71076H9.9458V7.27553H9.99804C10.4963 6.37425 11.7133 5.42312 13.5289 5.42312C17.3057 5.42312 18 7.79712 18 10.8806V17.1819H17.996Z" fill-opacity="1"/>
@@ -28,7 +28,7 @@
                 </div>
             </div>
 
-            <div class="relative z-20">
+            <div class="relative z-20 self-center lg:self-end">
                 <img src="~/static/img/hero_face.png" alt="avatar 3d" class="hero-avatar" loading="lazy" width="434" height="484">
                 <svg class="absolute top-0 jam-figure" width="439" height="484" viewBox="0 0 439 484" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect class="hero-white-rect" x="106" y="84.5234" width="200" height="200" transform="rotate(-25 106 84.5234)" fill="white"/>
@@ -42,15 +42,27 @@
 
 <script>
 export default {
-mounted(){
-// hero animation
-const gsap = this.$gsap
-const heroTl = gsap.timeline()
-heroTl
-    .from('.hero-lime-path', { opacity:0, y:-189, x:-90, duration:0.6 })
-    .from('.hero-blue-path', { opacity:0, y:-95, x:205, duration: 0.6 })
-    .from('.hero-avatar', { opacity:0, y:100, duration:0.5 })
-},
+    data() {
+        return {
+            screenLg: false,
+        }
+    },
+    mounted(){
+        const gsap = this.$gsap
+        const responsive = window.matchMedia("(max-width: 1024px)")
+        const heroImg = gsap.timeline()
+        this.screenLg = responsive.matches
+
+        if(!this.screenLg){
+            heroImg
+            .to('.hero-white-rect', { opacity:1, duration:0.6 })
+            .to('.hero-lime-path', { opacity:1, y:0, x:0, duration:0.5,  ease: 'Power2.easeInOut' })
+            .to('.hero-blue-path', { opacity:1, y:0, x:0, duration: 0.5, ease: 'Power2.easeInOut' })
+            .to('.hero-avatar', { opacity:1, y:0, duration:0.5 })
+            .to('.hero-btn', { duration:0.5, boxShadow: '0 0 5px rgba(208, 242, 38, 0.77), 0 0 10px rgba(208, 242, 38, 0.77), 0 0 30px rgba(208, 242, 38, 0.77)', ease: 'Power4. easeOut' })
+            .to('.hero-btn', { duration:0.4, boxShadow: '0 0 0 rgba(208, 242, 38, 0)', ease: 'Power4. easeOut' })
+        }
+    },
 }
 </script>
 
@@ -58,4 +70,50 @@ heroTl
 .jam-figure{
     z-index: -1;
 }
+
+.hero-white-rect{
+    opacity: 0;
+}
+
+.hero-lime-path{
+    transform: translateX(-90px) translateY(-189px);
+    opacity: 0;
+}
+
+.hero-blue-path{
+    transform: translateX(205px) translateY(-95px);;
+    opacity: 0;
+}
+
+.hero-avatar{
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+@media only screen and (max-width: 1024px) {
+    .hero-white-rect{
+        opacity: 1;
+    }
+    .hero-avatar{
+        opacity: 1;
+        transform: unset;
+    }
+    .hero-blue-path{
+        transform: unset;;
+        opacity: 1;
+    }
+    .hero-white-rect{
+        opacity: 1;
+    }
+
+    .hero-lime-path{
+        transform: unset;
+        opacity: 1;
+    }
+    .jam-figure{
+        width: 100%;
+        height: auto;
+    }
+}
+
 </style>

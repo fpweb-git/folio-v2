@@ -1,6 +1,6 @@
 <template>
     <header class="h-20 w-full bg-dark relative">
-        <nav class="main-container h-full flex justify-between items-center px-3">
+        <nav class="main-container h-full flex justify-between items-center px-4">
             <div class="flex items-center space-x-8">
                 <NuxtLink to="/">
                     <img src="~/static/img/logo.svg" alt="françois parrou logo" width="35" height="35">
@@ -11,7 +11,11 @@
                     <li class="nav-links"><NuxtLink to="/">Réalisation</NuxtLink></li>
                     <li class="nav-links"><NuxtLink to="/">Jamstack</NuxtLink></li>
                     <li class="nav-links"><NuxtLink to="/">Blog</NuxtLink></li>
-                    <li class="flex items-center"><button aria-label="rechercher" @click="openSearch()"><img src="~/static/icon/search_white.svg" class="cursor-pointer" alt="icone de recherche"></button></li>
+                    <li class="flex items-center"><button aria-label="rechercher" @click="openSearch()"><img src="~/static/icon/search_white.svg" class="cursor-pointer mr-2" alt="icône de recherche"></button>
+                        <transition name="slide-search">
+                            <SearchBarNav v-if="searchIsOpen"/>
+                        </transition>
+                    </li>
                 </ul>
             </div>
             <div class="hidden lg:flex items-center space-x-8">
@@ -29,7 +33,7 @@
                 </button>
             </div>
             <transition name="slide-left">
-                <div v-if="rspIsOpen" class="absolute bg-dark h-screen top-0 right-0 px-10 py-24 z-40">
+                <div v-if="rspIsOpen" class="absolute bg-dark top-0 right-0 px-10 py-24 z-40 border-l-2 border-b-2 border-white">
                     <ul class="flex flex-col text-white space-y-6 mb-6">
                         <li class="nav-links"><NuxtLink to="/">Accueil</NuxtLink></li>
                         <li class="nav-links"><NuxtLink to="/">Services</NuxtLink></li>
@@ -44,11 +48,6 @@
                 </div>
             </transition>
         </nav>
-        <transition name="slide-top">
-            <div v-if="searchIsOpen" class="absolute top-20 w-full flex justify-center bg-white border-b border-dark py-6 z-0">
-                <SearchBarNav />
-            </div>
-        </transition>
     </header>    
 </template>
 
@@ -143,24 +142,31 @@ export default {
 .slide-left-enter-active,
 .slide-left-leave-active {
     transition: all 0.3s ease-out;
-    transform-origin: top right;
+    transform-origin: top left;
 }
 
-.slide-top-enter,
-.slide-top-leave-to {
-    transform: translateX(200px);
+.slide-search-enter
+{
+    transform: scaleX(0.5);
     opacity: 0;
 }
 
-.slide-top-enter-to,
-.slide-top-leave {
-    opacity: 1;
-    transform: translateY(0);
+.slide-search-leave-to{
+    opacity: 0;
 }
 
-.slide-top-enter-active,
-.slide-top-leave-active {
-    transition: all 0.3s ease-out;
-    transform-origin: center right;
+.slide-search-enter-to{
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.slide-search-leave{
+    opacity: 1;
+} 
+
+.slide-search-enter-active,
+.slide-search-leave-active {
+    transition: all 0.3s ease;
+    transform-origin: center left;
 }
 </style>
