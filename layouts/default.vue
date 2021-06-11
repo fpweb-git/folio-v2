@@ -20,7 +20,7 @@ html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
-    color: #18191F;
+    color: #15141B;
 }
 
 *,
@@ -53,7 +53,21 @@ button:focus {
   transition: all ease 300ms;
     &:hover{
       background: #D0F224;
-      color: black;
+      color: #15141B;
+    }
+}
+
+.lime-btn{
+  background: #D0F224;
+  padding: 0.85rem 1.5rem;
+  color: #15141B;
+  border-radius: 10px;
+  transition: all ease 300ms;
+  font-weight: 500;
+  font-size: 18px;
+    &:hover{
+      background: white;
+      color: #15141B;
     }
 }
 </style>
