@@ -7,7 +7,7 @@
                     Developpeur web<br>
                     Vue.js, Jamstack
                 </h1>
-                <p class="text-white text-base sm:text-lg my-8">Je developpe des sites web <strong class="text-lime hero-lime-text">modernes</strong> et <strong class="text-lime hero-lime-text">rapides</strong> en utilisant les dernieres technologies innovantes.</p>
+                <p class="text-white text-base sm:text-lg my-8">Je developpe des sites web et app <strong class="text-lime hero-lime-text">modernes</strong> et <strong class="text-lime hero-lime-text">rapides</strong> en utilisant Nuxt.js et l'architecture Jamstack.</p>
                 <button aria-label="contact" class="lime-btn mb-8 hero-btn">Contactez-moi</button>
                 <div class="flex space-x-6 mb-10 sm:mb-20">
                     <a href="https://www.linkedin.com/in/fran%C3%A7ois-parrou-21367b56/" target="_blank" rel="noopener" title="lien linkedin" >
@@ -55,12 +55,11 @@ export default {
 
         if(!this.screenLg){
             heroImg
-            .to('.hero-white-rect', { opacity:1, duration:0.6 })
+            .to('.hero-white-rect', { opacity:1, duration:0.8 })
             .to('.hero-lime-path', { opacity:1, y:0, x:0, duration:0.5,  ease: 'Power2.easeInOut' })
             .to('.hero-blue-path', { opacity:1, y:0, x:0, duration: 0.5, ease: 'Power2.easeInOut' })
             .to('.hero-avatar', { opacity:1, y:0, duration:0.5 })
-            .to('.hero-btn', { duration:0.5, boxShadow: '0 0 5px rgba(208, 242, 38, 0.77), 0 0 10px rgba(208, 242, 38, 0.77), 0 0 30px rgba(208, 242, 38, 0.77)', ease: 'Power4. easeOut' })
-            .to('.hero-btn', { duration:0.4, boxShadow: '0 0 0 rgba(208, 242, 38, 0)', ease: 'Power4. easeOut' })
+            .to('.hero-btn', { duration:0.6, boxShadow: '0 0 5px rgba(208, 242, 38, 0.77), 0 0 10px rgba(208, 242, 38, 0.77), 0 0 30px rgba(208, 242, 38, 0.77), 0 0 40px rgba(208, 242, 38, 0.77)', yoyo:true, repeat:1, ease: 'Power4. easeOut' })
         }
     },
 }

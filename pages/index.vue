@@ -1,6 +1,7 @@
 <template>
   <div>
-    <HomeHero />
+    <HomeHero class="overflow-hidden"/>
+    <HomeJamstackIntro />
   </div>
 </template>
 

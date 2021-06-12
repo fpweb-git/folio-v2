@@ -15,10 +15,6 @@ html {
     font-size: 16px;
     font-weight: 400;
     word-spacing: 1px;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
     color: #15141B;
 }
@@ -63,11 +59,10 @@ button:focus {
   color: #15141B;
   border-radius: 10px;
   transition: all ease 300ms;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
     &:hover{
       background: white;
-      color: #15141B;
     }
 }
 </style>
