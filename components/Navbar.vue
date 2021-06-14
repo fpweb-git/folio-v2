@@ -23,7 +23,7 @@
                 <button aria-label="contact" class="lime-btn-out">Contact</button>
             </div>
             <!-- mobile -->
-            <div class="z-50 block lg:hidden">
+            <div class="z-40 block lg:hidden">
                 <button class="burger" @click="openRspNav()" aria-label="Ouvrir la navigation">
                     <svg width="40" height="40" viewBox="0 0 100 100">
                         <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
@@ -33,7 +33,7 @@
                 </button>
             </div>
             <transition name="slide-left">
-                <div v-if="rspIsOpen" class="absolute bg-dark top-0 right-0 px-10 py-24 z-40 border-l-2 border-b-2 border-white">
+                <div v-if="rspIsOpen" class="absolute bg-deepdark top-0 right-0 px-10 py-24 z-30 shadow-xl">
                     <ul class="flex flex-col text-white space-y-6 mb-6">
                         <li class="nav-links"><NuxtLink to="/">Accueil</NuxtLink></li>
                         <li class="nav-links"><NuxtLink to="/">Services</NuxtLink></li>
@@ -43,7 +43,7 @@
                         <li><NuxtLink to="/" class="nav-links">Mon compte</NuxtLink></li>
                     </ul>
                     <div>
-                        <button aria-label="contact" class="lime-btn-out">Contact</button>
+                        <button aria-label="contact" class="lime-btn-out mt-4">Contact</button>
                     </div>
                 </div>
             </transition>

@@ -1,9 +1,25 @@
 <template>
   <div class="overflow-hidden">
+    <div v-if="!pageIsLoaded " class="fixed w-full h-full bg-white z-50"></div>
     <Navbar />
     <Nuxt />
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+        return {
+            pageIsLoaded : false
+        }
+    },
+  mounted(){ 
+    window.addEventListener("load", () => {
+      this.pageIsLoaded  = true
+    });
+  }
+}
+</script>
 
 <style lang="scss">
 

@@ -2,12 +2,8 @@
   <div>
     <HomeHero class="overflow-hidden"/>
     <HomeJamstackIntro />
+    <HomeWebDev />
   </div>
 </template>
 
-<script>
-export default {
-
-}
-</script>
 
