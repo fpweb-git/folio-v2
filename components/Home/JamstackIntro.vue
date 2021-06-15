@@ -12,7 +12,7 @@
                 <div class="max-w-xl">
                     <h3 class="text-3xl sm:text-4xl font-extrabold mb-8">Les avantages de l’architecture Jamstack</h3>
                     <p class="mb-10">
-                        La Jamstack (Javascript, API, Markup) c’est une architecture de développement Web moderne qui met l'accent sur l'utilisation de CDN et le fait de découpler différents services pour obtenir des sites performants, robustes et sécurisés en utilisant des frameworks modernes.
+                        La Jamstack (Javascript, API, Markup), est une architecture de développement Web moderne qui met l'accent sur l'utilisation de CDN et le fait de découpler différents services pour obtenir des sites performants, robustes et sécurisés en utilisant des frameworks modernes.
                     </p>
                     <NuxtLink to="/" class="text-blue underline font-medium flex items-center">
                         En savoir plus

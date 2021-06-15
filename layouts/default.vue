@@ -2,7 +2,10 @@
   <div class="overflow-hidden">
     <div v-if="!pageIsLoaded " class="fixed w-full h-full bg-white z-50"></div>
     <Navbar />
+    <Availability />
     <Nuxt />
+    <Gotop />
+    <Footer />
   </div>
 </template>
 
@@ -79,6 +82,26 @@ button:focus {
   font-size: 18px;
     &:hover{
       background: white;
+    }
+}
+
+.dark-btn{
+  background: #15141B;
+  padding: 0.85rem 1.5rem;
+  color: white;
+  border-radius: 10px;
+  transition: all ease 300ms;
+  font-weight: 600;
+  font-size: 18px;
+    &:hover{
+      color: #D0F224;
+    }
+}
+
+.nav-links{
+    transition: all 200ms ease;
+    &:hover{
+        border-bottom: 1px solid #D0F224;
     }
 }
 </style>

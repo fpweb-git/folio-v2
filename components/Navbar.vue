@@ -1,6 +1,6 @@
 <template>
     <header class="h-20 w-full bg-dark relative">
-        <nav class="main-container h-full flex justify-between items-center px-4">
+        <nav class="main-container h-full flex justify-between items-center px-4" id="navbar">
             <div class="flex items-center space-x-8">
                 <NuxtLink to="/">
                     <img src="~/static/img/logo.svg" alt="françois parrou logo" width="35" height="35">
@@ -8,7 +8,7 @@
                 <ul class="hidden lg:flex text-white space-x-8 items-center text-sm">
                     <li class="nav-links"><NuxtLink to="/">Accueil</NuxtLink></li>
                     <li class="nav-links"><NuxtLink to="/">Services</NuxtLink></li>
-                    <li class="nav-links"><NuxtLink to="/">Réalisation</NuxtLink></li>
+                    <li class="nav-links"><NuxtLink to="/">Réalisations</NuxtLink></li>
                     <li class="nav-links"><NuxtLink to="/">Jamstack</NuxtLink></li>
                     <li class="nav-links"><NuxtLink to="/">Blog</NuxtLink></li>
                     <li class="flex items-center"><button aria-label="rechercher" @click="openSearch()"><img src="~/static/icon/search_white.svg" class="cursor-pointer mr-2" alt="icône de recherche"></button>
@@ -81,12 +81,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.nav-links{
-    transition: all 200ms ease;
-    &:hover{
-        border-bottom: 1px solid #D0F224;
-    }
-}
 
 .burger {
     border: none;
