@@ -7,8 +7,8 @@
                     Developpeur web<br>
                     Vue.js, Jamstack
                 </h1>
-                <p class="text-white text-base sm:text-lg my-8">Je developpe des sites web et apps <strong class="text-lime hero-lime-text">modernes</strong> et <strong class="text-lime hero-lime-text">rapides</strong> en utilisant Vue.js, Nuxt.js et l'architecture Jamstack.</p>
-                <button aria-label="contact" class="lime-btn mb-8 hero-btn">Contactez-moi</button>
+                <p class="text-white text-base sm:text-lg my-8">Je developpe des sites web et apps <strong class="text-lime hero-lime-text">modernes</strong> et <strong class="text-lime hero-lime-text">rapides</strong> en utilisant Vue.js et Nuxt.js.</p>
+                <button aria-label="contact" class="lime-btn mb-8 hero-btn">Mes services</button>
                 <div class="flex space-x-6 mb-10 sm:mb-20">
                     <a href="https://www.linkedin.com/in/fran%C3%A7ois-parrou-21367b56/" target="_blank" rel="noopener" title="lien linkedin" >
                         <svg width="18" height="20" viewBox="0 0 18 20" fill="none" class="fill-current text-white text-opacity-70 hover:text-opacity-100 transition ease duration-300" xmlns="http://www.w3.org/2000/svg">
@@ -29,12 +29,8 @@
             </div>
 
             <div class="relative z-20 self-center lg:self-end">
-                <img src="~/static/img/hero_face.png" alt="avatar 3d" class="hero-avatar" loading="lazy" width="434" height="484">
-                <svg class="absolute top-0 jam-figure" width="439" height="484" viewBox="0 0 439 484" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect class="hero-white-rect" x="106" y="84.5234" width="200" height="200" transform="rotate(-25 106 84.5234)" fill="white"/>
-                    <path class="hero-lime-path" d="M199 283.523L380.262 199L422.523 289.631C445.864 339.685 424.208 399.183 374.154 422.523L283.524 464.785L199 283.523Z" fill="#D0F224"/>
-                    <path class="hero-blue-path" d="M0 376.523L181.262 292L265.785 473.261L175.154 515.523C125.1 538.864 65.6024 517.208 42.2618 467.154L0 376.523Z" fill="#2F2E8B"/>
-                </svg>
+                <img src="~/static/img/hero-pic.jpg" class="hero-profil-pic" width="420px" height="485" alt="françois parrou photo de profil" loading="lazy">
+                <img src="~/static/img/element-hero.png" class="absolute top-0 left-0 hero-element" width="420px" height="485" alt="element de décoration" loading="lazy">
             </div>
         </div>
     </section>
@@ -55,64 +51,10 @@ export default {
 
         if(!this.screenLg){
             heroImg
-            .to('.hero-white-rect', { opacity:1, duration:0.8 })
-            .to('.hero-lime-path', { opacity:1, y:0, x:0, duration:0.5,  ease: 'Power2.easeInOut' })
-            .to('.hero-blue-path', { opacity:1, y:0, x:0, duration: 0.5, ease: 'Power2.easeInOut' })
-            .to('.hero-avatar', { opacity:1, y:0, duration:0.5 })
+            .from('.hero-profil-pic', { opacity:0, y:100, duration:0.8 })
+            .from('.hero-element', { opacity:0, duration: 1.2 })
             .to('.hero-btn', { duration:0.6, boxShadow: '0 0 5px rgba(208, 242, 38, 0.77), 0 0 10px rgba(208, 242, 38, 0.77), 0 0 30px rgba(208, 242, 38, 0.77), 0 0 40px rgba(208, 242, 38, 0.77)', yoyo:true, repeat:1, ease: 'Power4. easeOut' })
         }
     },
 }
 </script>
-
-<style lang="scss" scoped>
-.jam-figure{
-    z-index: -1;
-}
-
-.hero-white-rect{
-    opacity: 0;
-}
-
-.hero-lime-path{
-    transform: translateX(-90px) translateY(-189px);
-    opacity: 0;
-}
-
-.hero-blue-path{
-    transform: translateX(205px) translateY(-95px);;
-    opacity: 0;
-}
-
-.hero-avatar{
-    opacity: 0;
-    transform: translateY(100px);
-}
-
-@media only screen and (max-width: 1024px) {
-    .hero-white-rect{
-        opacity: 1;
-    }
-    .hero-avatar{
-        opacity: 1;
-        transform: unset;
-    }
-    .hero-blue-path{
-        transform: unset;;
-        opacity: 1;
-    }
-    .hero-white-rect{
-        opacity: 1;
-    }
-
-    .hero-lime-path{
-        transform: unset;
-        opacity: 1;
-    }
-    .jam-figure{
-        width: 100%;
-        height: auto;
-    }
-}
-
-</style>

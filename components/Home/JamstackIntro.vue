@@ -95,17 +95,16 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="mt-20 flex justify-center items-center">
-                    <svg width="422" height="211" viewBox="0 0 422 211" fill="none" xmlns="http://www.w3.org/2000/svg" id="geometric-shape">
-                        <rect class="geo-blue-bottom" x="209.945" y="105.5" width="105.5" height="105.5" transform="rotate(90 209.945 105.5)" fill="#2F2E8B"/>
-                        <path class="geo-blue-top" d="M315.445 0C315.445 58.266 268.211 105.5 209.945 105.5V0L315.445 0Z" fill="#2F2E8B"/>
-                        <path class="geo-lime-left" d="M0 211C0 152.734 47.234 105.5 105.5 105.5V211H0Z" fill="#D0F224"/>
-                        <path class="geo-white-right" d="M316.5 105.5C374.766 105.5 422 152.734 422 211H316.5V105.5Z" fill="white"/>
-                        <path class="geo-white-top" d="M211 0V105.5L105.5 105.5C105.5 47.234 152.734 0 211 0Z" fill="white"/>
-                        <path class="geo-lime-right" d="M316.5 105.5V211C258.234 211 211 163.766 211 105.5L316.5 105.5Z" fill="#D0F224"/>
-                    </svg>
-                </div>
+            </div>
+            <div class="mt-20 flex justify-center items-center overflow-hidden">
+                <svg class="min-w-max" width="422" height="211" viewBox="0 0 422 211" fill="none" xmlns="http://www.w3.org/2000/svg" id="geometric-shape">
+                    <rect class="geo-blue-bottom" x="209.945" y="105.5" width="105.5" height="105.5" transform="rotate(90 209.945 105.5)" fill="#2F2E8B"/>
+                    <path class="geo-blue-top" d="M315.445 0C315.445 58.266 268.211 105.5 209.945 105.5V0L315.445 0Z" fill="#2F2E8B"/>
+                    <path class="geo-lime-left" d="M0 211C0 152.734 47.234 105.5 105.5 105.5V211H0Z" fill="#D0F224"/>
+                    <path class="geo-white-right" d="M316.5 105.5C374.766 105.5 422 152.734 422 211H316.5V105.5Z" fill="white"/>
+                    <path class="geo-white-top" d="M211 0V105.5L105.5 105.5C105.5 47.234 152.734 0 211 0Z" fill="white"/>
+                    <path class="geo-lime-right" d="M316.5 105.5V211C258.234 211 211 163.766 211 105.5L316.5 105.5Z" fill="#D0F224"/>
+                </svg>
             </div>
         </div>
     </section>

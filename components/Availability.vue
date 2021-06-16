@@ -1,10 +1,12 @@
 <template>
     <div class="availability-widget shadow-xl z-40 cursor-pointer" @click="openWidget($event)">
-        <img src="~/static/img/availability-avatar.png" width="40" height="40" alt="avatar disponibilité" class="pointer-events-none">
+        <div class="relative">
+            <img src="~/static/img/availability-avatar.png" width="40" height="40" alt="avatar disponibilité" class="pointer-events-none">
+            <div class="maru ml-2 rounded-full bg-orange shadow pointer-events-none"></div>
+        </div>
         <div class="ml-3 pointer-events-none">
             <div class="flex items-center">
-                <h3 class="text-sm font-medium">Disponibilité</h3>
-                <div class="maru ml-2 rounded-full bg-orange shadow"></div>
+                <h3 class="text-sm font-medium">Disponibilité :</h3>
             </div>
             <p class="info">
                 Disponible très prochainement.<br>
@@ -20,6 +22,8 @@ export default {
     mounted(){
         const gsap = this.$gsap
         const widget = document.querySelector('.availability-widget')
+        const responsive = window.matchMedia("(max-width: 1024px)")
+        this.screenLg = responsive.matches
         const availabilityEntrance = gsap.timeline()
         const availabilityAnim = gsap.timeline({
             scrollTrigger : {
@@ -28,9 +32,14 @@ export default {
             },
         })
 
+        if(!this.screenLg){
         availabilityEntrance
         .from(widget, { delay:1, duration:0.3, x:195, ease: 'Elastic.easeOut.config(1, 0.5)' })
-
+        }
+        else{
+        availabilityEntrance
+        .to(widget, { delay:0.4, duration:0.3, x:195, ease: 'Elastic.easeOut.config(1, 0.5)' }) 
+        }
         availabilityAnim
         .to(widget, { delay:0.1, duration:0.3, x:195, ease: 'Elastic.easeOut.config(1, 0.5)'})
 
@@ -58,7 +67,7 @@ export default {
     background: white;
     position: fixed;
     right: 0;
-    top: 50%;
+    top: 55%;
     height: 70px;
     width: 250px;
     border-top-left-radius: 6px;
@@ -66,8 +75,12 @@ export default {
 }
 
 .maru{
-    height: 10px;
-    width: 10px;
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    border: 1px solid white;
 }
 
 .info{
