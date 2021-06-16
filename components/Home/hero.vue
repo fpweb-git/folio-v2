@@ -1,7 +1,7 @@
 <template>
     <section class="bg-dark w-full">
         <div class="main-container px-4 pt-6 lg:pt-20 flex flex-col lg:flex-row justify-between items-center">
-            <div class="max-w-xl">
+            <div class="max-w-xl mr-3">
                 <h1 class="text-white font-extrabold text-4xl sm:text-6xl">
                     <span class="text-lime text-lg inline-block mb-1 hero-lime-text">François Parrou</span><br>
                     Developpeur web<br>

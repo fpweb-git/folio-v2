@@ -58,7 +58,7 @@
 
         <div class="bg-dark w-full pt-10 md:pt-20">
             <div class="main-container px-4">
-                <h3 class="text-white text-3xl sm:text-4xl font-extrabold text-center mb-20">Les technologies<br class="block sm:hidden"> que j’utilise</h3>
+                <h3 class="text-white text-3xl sm:text-4xl font-extrabold text-center mb-14 sm:mb-20">Les technologies<br class="block sm:hidden"> que j’utilise</h3>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-20">
                     <div class="w-auto sm:w-80 mx-0 sm:mx-auto flex flex-col">
