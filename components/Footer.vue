@@ -7,11 +7,11 @@
                     <nav>
                         <ul class="hidden md:flex text-lightgray space-x-6 items-center text-sm">
                             <li class="nav-links"><NuxtLink to="/">Accueil</NuxtLink></li>
-                            <li class="nav-links"><NuxtLink to="/">Services</NuxtLink></li>
-                            <li class="nav-links"><NuxtLink to="/">Réalisation</NuxtLink></li>
-                            <li class="nav-links"><NuxtLink to="/">Jamstack</NuxtLink></li>
-                            <li class="nav-links"><NuxtLink to="/">Blog</NuxtLink></li>
-                            <li class="nav-links"><NuxtLink to="/">Mentions légales</NuxtLink></li>
+                            <li class="nav-links"><NuxtLink to="/services/">Services</NuxtLink></li>
+                            <li class="nav-links"><NuxtLink to="/realisations/">Réalisation</NuxtLink></li>
+                            <li class="nav-links"><NuxtLink to="/jamstack/">Jamstack</NuxtLink></li>
+                            <li class="nav-links"><NuxtLink to="/blog/">Blog</NuxtLink></li>
+                            <li class="nav-links"><NuxtLink to="/mentions-legales/">Mentions légales</NuxtLink></li>
                         </ul>
                     </nav>              
                 </div>

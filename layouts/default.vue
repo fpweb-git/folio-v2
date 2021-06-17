@@ -5,6 +5,7 @@
     <Availability />
     <Nuxt />
     <Gotop />
+    <Cta />
     <Footer />
   </div>
 </template>

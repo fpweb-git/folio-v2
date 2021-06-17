@@ -8,7 +8,7 @@
                 </svg>
                 <span class="perfnumber absolute text-lime font-mono text-3xl">0</span>
             </div>
-            <span class="text-white inline-block mt-2 font-open w-full text-sm text-center">Performances</span>
+            <span class="text-white inline-block mt-2 font-medium w-full text-sm text-center">Performances</span>
         </div>
 
         <div class="w-auto md:w-32">
@@ -19,7 +19,7 @@
                 </svg>
                 <span class="perfnumber absolute text-lime font-mono text-3xl">0</span>
             </div>
-            <span class="text-white inline-block mt-2 font-open w-full text-sm text-center">Accessibilité</span>
+            <span class="text-white inline-block mt-2 font-medium w-full text-sm text-center">Accessibilité</span>
         </div>
 
         <div class="w-auto md:w-32">
@@ -30,7 +30,7 @@
                 </svg>
                 <span class="perfnumber absolute text-lime font-mono text-3xl">0</span>
             </div>
-            <span class="text-white inline-block mt-2 font-open w-full text-sm text-center">Bonnes pratiques</span>
+            <span class="text-white inline-block mt-2 font-medium w-full text-sm text-center">Bonnes pratiques</span>
         </div>
 
         <div class="w-auto md:w-32">
@@ -41,7 +41,7 @@
                 </svg>
                 <span class="perfnumber absolute text-lime font-mono text-3xl">0</span>
             </div>
-            <span class="text-white inline-block mt-2 font-open w-full text-sm text-center">SEO</span>
+            <span class="text-white inline-block mt-2 w-full text-sm font-medium text-center">SEO</span>
         </div>
     </div>
 </template>

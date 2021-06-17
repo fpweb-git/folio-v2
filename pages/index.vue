@@ -4,7 +4,6 @@
     <HomeAbout />
     <HomeJamstackIntro />
     <HomeWebDev />
-    <Cta />
   </div>
 </template>
 

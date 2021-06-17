@@ -8,7 +8,9 @@
                     Vue.js, Jamstack
                 </h1>
                 <p class="text-white text-base sm:text-lg my-8">Je developpe des sites web et apps <strong class="text-lime hero-lime-text">modernes</strong> et <strong class="text-lime hero-lime-text">rapides</strong> en utilisant Vue.js et Nuxt.js.</p>
-                <button aria-label="contact" class="lime-btn mb-8 hero-btn">Mes services</button>
+                <NuxtLink to="/services/">
+                    <button aria-label="contact" class="lime-btn mb-8 hero-btn">Mes services</button>
+                </NuxtLink>
                 <div class="flex space-x-6 mb-10 sm:mb-20">
                     <a href="https://www.linkedin.com/in/fran%C3%A7ois-parrou-21367b56/" target="_blank" rel="noopener" title="lien linkedin" >
                         <svg width="18" height="20" viewBox="0 0 18 20" fill="none" class="fill-current text-white text-opacity-70 hover:text-opacity-100 transition ease duration-300" xmlns="http://www.w3.org/2000/svg">
@@ -51,9 +53,9 @@ export default {
 
         if(!this.screenLg){
             heroImg
-            .from('.hero-profil-pic', { opacity:0, y:100, duration:0.8 })
-            .from('.hero-element', { opacity:0, duration: 1.2 })
-            .to('.hero-btn', { duration:0.6, boxShadow: '0 0 5px rgba(208, 242, 38, 0.77), 0 0 10px rgba(208, 242, 38, 0.77), 0 0 30px rgba(208, 242, 38, 0.77), 0 0 40px rgba(208, 242, 38, 0.77)', yoyo:true, repeat:1, ease: 'Power4. easeOut' })
+            .from('.hero-profil-pic', { opacity:0, y:100, duration:0.7 })
+            .from('.hero-element', { opacity:0, duration: 1 })
+            .to('.hero-btn', { duration:0.5, boxShadow: '0 0 5px rgba(208, 242, 38, 0.77), 0 0 10px rgba(208, 242, 38, 0.77), 0 0 30px rgba(208, 242, 38, 0.77), 0 0 40px rgba(208, 242, 38, 0.77)', yoyo:true, repeat:1, ease: 'Power4. easeOut' })
         }
     },
 }

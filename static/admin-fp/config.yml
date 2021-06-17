@@ -1,0 +1,59 @@
+backend:
+  # name: git-gateway
+  # branch: master
+
+  # local dev
+  name: github
+  repo: fpweb-git/folio-v2
+
+# publish_mode: editorial_workflow
+show_preview_links : false
+locale: 'fr'
+media_folder: static/img/upload
+public_folder: /img/upload
+# logo_url: /img/logo_magenta.svg
+
+collections:
+  - name: 'realisations'
+    label: 'realisations'
+    folder: 'content/realisations'
+    create: true
+    format: 'frontmatter'
+    fields:
+      - {
+          label: 'Type',
+          name: 'type',
+          widget: 'select',
+          default: 'site vitrine',
+          options: [
+            { label: 'Site vitrine', value: 'Site vitrine' },
+            { label: 'Site vitrine | Blog', value: 'Site vitrine | Blog' },
+            { label: 'Ecommerce', value: 'Ecommerce' },
+            { label: 'Frontend', value: 'Frontend' },
+            { label: 'Fullstack', value: 'Fullstack' },
+            { label: 'Web design', value: 'Web design' },
+          ],
+        }
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Date', name: 'date', widget: 'datetime', date_format: "YYYY-MM-DD", time_format: "HH:mm",  default: "" }
+      - { label: 'Link', name: 'link', widget: 'string', required: true }
+      - { label: 'Cover image', name: 'cover', widget: 'image', required: true, allow_multiple: false }
+      - { label: 'Alt', name: 'alt', widget: 'string', required: true }
+
+
+  - name: 'blog'
+    label: 'Blog'
+    folder: 'content/blog'
+    create: true
+    format: 'frontmatter'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Date', name: 'date', widget: 'datetime', date_format: "YYYY-MM-DD", time_format: "HH:mm",  default: "" }
+      - { label: 'Mis en avant', name: 'featured', widget: 'boolean', default: false }
+      - { label: 'Permalink', name: 'permalink', widget: 'string', required: true }
+      - { label: 'Cover image', name: 'cover', widget: 'image', required: true, allow_multiple: false }
+      - { label: 'Description(card)', name: 'description', widget: 'string', required: true }
+      - { label: 'Content', name: 'body', widget: 'markdown', required: true }
+      - { label: 'Meta title', name: 'metaTitle', widget: 'string', required: true }
+      - { label: 'Meta description', name: 'metaDescription', widget: 'string', required: true }
+

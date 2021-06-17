@@ -7,10 +7,10 @@
                 </NuxtLink>
                 <ul class="hidden lg:flex text-white space-x-8 items-center text-sm">
                     <li class="nav-links"><NuxtLink to="/">Accueil</NuxtLink></li>
-                    <li class="nav-links"><NuxtLink to="/">Services</NuxtLink></li>
-                    <li class="nav-links"><NuxtLink to="/">Réalisations</NuxtLink></li>
-                    <li class="nav-links"><NuxtLink to="/">Jamstack</NuxtLink></li>
-                    <li class="nav-links"><NuxtLink to="/">Blog</NuxtLink></li>
+                    <li class="nav-links"><NuxtLink to="/services/">Services</NuxtLink></li>
+                    <li class="nav-links"><NuxtLink to="/realisations/">Réalisations</NuxtLink></li>
+                    <li class="nav-links"><NuxtLink to="/jamstack/">Jamstack</NuxtLink></li>
+                    <li class="nav-links"><NuxtLink to="/blog/">Blog</NuxtLink></li>
                     <li class="flex items-center"><button aria-label="rechercher" @click="openSearch()"><img src="~/static/icon/search_white.svg" class="cursor-pointer mr-2" alt="icône de recherche"></button>
                         <transition name="slide-search">
                             <SearchBarNav v-if="searchIsOpen"/>
@@ -36,10 +36,10 @@
                 <div v-if="rspIsOpen" class="absolute bg-deepdark top-0 right-0 px-10 py-24 z-30 shadow-xl">
                     <ul class="flex flex-col text-white space-y-6 mb-6">
                         <li class="nav-links"><NuxtLink to="/">Accueil</NuxtLink></li>
-                        <li class="nav-links"><NuxtLink to="/">Services</NuxtLink></li>
-                        <li class="nav-links"><NuxtLink to="/">Réalisation</NuxtLink></li>
-                        <li class="nav-links"><NuxtLink to="/">Jamstack</NuxtLink></li>
-                        <li class="nav-links"><NuxtLink to="/">Blog</NuxtLink></li>
+                        <li class="nav-links"><NuxtLink to="/services/">Services</NuxtLink></li>
+                        <li class="nav-links"><NuxtLink to="/realisations/">Réalisation</NuxtLink></li>
+                        <li class="nav-links"><NuxtLink to="/jamstack/">Jamstack</NuxtLink></li>
+                        <li class="nav-links"><NuxtLink to="/blog/">Blog</NuxtLink></li>
                         <li><NuxtLink to="/" class="nav-links">Mon compte</NuxtLink></li>
                     </ul>
                     <div>
