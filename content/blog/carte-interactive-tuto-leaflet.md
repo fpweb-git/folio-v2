@@ -1,7 +1,6 @@
 ---
 title: Carte interactive tuto Leaflet
 date: 2021-03-19T09:15:11.429Z
-featured: false
 permalink: carte-leaflet
 cover: /img/upload/leaflet-cover.jpg
 description: Petit projet simple pour créer une carte interactive avec Leaflet

@@ -2,17 +2,17 @@
     <main class="bg-lightgray">
         <div class="main-container py-10 sm:py-20">
             <div class="px-4">
-                <h1 class="text-center font-semibold text-lg text-blue mb-3">Réalisations</h1>
-                <p class="text-3xl md:text-5xl font-extrabold text-center max-w-xl mx-auto mb-10">Ils m’on confié leurs projets</p>
+                <span class="inline-block font-semibold text-lg text-blue mb-10">Developpement, design, technologies</span>
+                <h1 class="text-3xl md:text-5xl font-extrabold mb-10">Blog</h1>
             </div>
-            <ul class="grid grid-cols-1 md:grid-cols-2 w-max mx-auto gap-14 my-14">
+            <ul class="grid grid-cols-1 md:grid-cols-3 w-max gap-28 my-14 px-4">
                 <li v-for="article in articles" :key="article.permalink">
-                    <BlogaCard
-                        :src="realisation.cover"
-                        :alt="realisation.alt"
-                        :link="realisation.permalink"
-                        :title="realisation.title"
-                        :description="realisation.description"
+                    <BlogCard
+                        :src="article.cover"
+                        :alt="article.title"
+                        :permalink="article.permalink"
+                        :title="article.title"
+                        :description="article.description"
                     />
                 </li>
             </ul>
@@ -24,7 +24,7 @@
 export default {
     async asyncData({ $content, params }) {
         const articles = await $content('blog')
-        // .only(['cover', 'link', 'date', 'title', 'type', 'alt'])
+        .only(['cover', 'permalink', 'date', 'title', 'description'])
         .sortBy('date', 'desc')
         .fetch()
 
