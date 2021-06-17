@@ -3,8 +3,8 @@
         <img :src="src" :alt="alt" width="300" height="280">
         <a class="absolute top-8 right-0 bg-dark text-lime py-2 px-3 rounded-l-md hover:text-white transition duration-300 ease-in-out" :href="link" target="_blank" rel="noopener">Voir le projet</a>
         <div class="h-20 flex flex-col justify-center items-center">
-            <h2 class="font-bold text-xl mb-1">{{ title }}</h2>
-            <span class="inline-block text-sm text-gray-700 font-medium mb-1">{{ type }}</span>
+            <h2 class="font-bold text-xl mt-6 mb-3">{{ title }}</h2>
+            <span class="inline-block text-sm text-gray-700 font-medium mb-3">{{ type }}</span>
         </div>
     </div>
 </template>
@@ -24,6 +24,6 @@ export default {
 <style lang="scss" scoped>
 .realisation-card{
     width: 300px;
-    height: 360px;
+    height: 380px;
 }
 </style>

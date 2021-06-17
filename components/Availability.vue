@@ -1,5 +1,5 @@
 <template>
-    <div class="availability-widget shadow-xl z-40 cursor-pointer" @click="openWidget($event)">
+    <div class="availability-widget shadow-xl z-40 cursor-pointer hidden sm:flex" @click="openWidget($event)">
         <div class="relative">
             <img src="~/static/img/availability-avatar.png" width="40" height="40" alt="avatar disponibilité">
             <div class="maru ml-2 rounded-full bg-orange shadow pointer-events-none"></div>
@@ -40,6 +40,7 @@ export default {
         availabilityEntrance
         .to(widget, { delay:0.4, duration:0.3, x:195, ease: 'Elastic.easeOut.config(1, 0.5)' }) 
         }
+
         availabilityAnim
         .to(widget, { delay:0.1, duration:0.3, x:195, ease: 'Elastic.easeOut.config(1, 0.5)'})
 
@@ -61,7 +62,6 @@ export default {
 
 <style lang="scss" scoped>
 .availability-widget{
-    display: flex;
     align-items: center;
     padding-left: 10px;
     background: white;
