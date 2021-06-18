@@ -5,8 +5,8 @@
         <p>
             Le terme Jamstack ne concerne pas une technologie en particulier. Il s'agit d'une architecture de développement Web moderne qui met l'accent sur l'utilisation de CDN et le fait de découpler différents services pour obtenir des sites très performants et sécuriser.
         </p>
-        <img class="mx-auto mt-14 mb-10" src="~/static/img/jamstack-schema.png" alt="développement web architecture jamstack" width="600" height="350">
-        <img class="mx-auto" src="~/static/img/standard-schema.png" alt="développement web architecture stantard" width="600" height="350">
+        <img class="mx-auto mt-14 mb-10" src="~/static/img/jamstack-schema.png" alt="développement web architecture jamstack" width="600" height="350" loading="lazy">
+        <img class="mx-auto" src="~/static/img/standard-schema.png" alt="développement web architecture stantard" width="600" height="350" loading="lazy">
         
         <h2>Que veux dire Jamstack ?</h2>
         <p>Le mot Jamstack peut se séparer en deux parties “JAM” signifie JAVASCRIPT | API | MARKUP et STACK pour l’ensemble des technologies utilisé.</p>
@@ -81,32 +81,32 @@
             <ul class="my-3 grid grid-cols-2 sm:grid-cols-3 gap-10 items-center">
                 <li>
                     <a href="https://strapi.io/" target="_blank" rel="noopener">
-                        <img src="~/static/img/brand/strapi-color.svg" alt="">
+                        <img src="~/static/img/brand/strapi-color.svg" alt="" width="154" height="40" loading="lazy">
                     </a>
                 </li>
                 <li>
                     <a href="https://www.sanity.io/" target="_blank" rel="noopener">
-                        <img src="~/static/img/brand/sanity-color.svg" alt="">
+                        <img src="~/static/img/brand/sanity-color.svg" alt="" width="144" height="30" loading="lazy">
                     </a>
                 </li>
                 <li>
                     <a href="https://www.contentful.com/" target="_blank" rel="noopener">
-                        <img src="~/static/img/brand/contentfull-color.svg" alt="">
+                        <img src="~/static/img/brand/contentfull-color.svg" alt="" width="183" height="37" loading="lazy">
                     </a>
                 </li>
                 <li>
                     <a href="https://prismic.io/" target="_blank" rel="noopener">
-                        <img src="~/static/img/brand/prismic-color.svg" alt="">
+                        <img src="~/static/img/brand/prismic-color.svg" alt="" width="154" height="40" loading="lazy">
                     </a>
                 </li>
                 <li>
                     <a href="https://www.storyblok.com/" target="_blank" rel="noopener">
-                        <img src="~/static/img/brand/storyblok-color.svg" alt="">
+                        <img src="~/static/img/brand/storyblok-color.svg" alt="" width="188" height="40" loading="lazy">
                     </a>
                 </li>
                 <li>
                     <a href="https://www.datocms.com/" target="_blank" rel="noopener">
-                        <img src="~/static/img/brand/datocms-color.svg" alt="">
+                        <img src="~/static/img/brand/datocms-color.svg" alt="" width="130" height="40" loading="lazy">
                     </a>
                 </li>
             </ul>
@@ -136,24 +136,24 @@
             <ul class="my-3 grid grid-cols-2 sm:grid-cols-3 gap-10 items-center">
                 <li>
                     <a href="https://www.netlifycms.org/" target="_blank" rel="noopener">
-                        <img src="~/static/img/brand/netlify-cms-color.svg" alt="">
+                        <img src="~/static/img/brand/netlify-cms-color.svg" alt="" width="156" height="40" loading="lazy">
                     </a>
                 </li>
                 <li>
                     <a href="https://forestry.io/" target="_blank" rel="noopener">
-                        <img src="~/static/img/brand/forestry-color.svg" alt="">
+                        <img src="~/static/img/brand/forestry-color.svg" alt="" width="191" height="40" loading="lazy">
                     </a>
                 </li>
                 <li>
                     <a href="https://tina.io/" target="_blank" rel="noopener">
-                        <img src="~/static/img/brand/tina-color.svg" alt="">
+                        <img src="~/static/img/brand/tina-color.svg" alt="" width="89" height="40" loading="lazy">
                     </a>
                 </li>
             </ul>
         </div>
 
         <h2>Jamstack vs Wordpress :</h2>
-        <img class="mx-auto mb-16" src="~/static/img/wordpress-vs-jamstack.png" alt="Jamstack vs Wordpress" width="600" height="285">
+        <img class="mx-auto mb-16" src="~/static/img/wordpress-vs-jamstack.png" alt="Jamstack vs Wordpress" width="600" height="285" loading="lazy">
         <p>
             Commençons par dire déjà que Wordpress est une plateforme, la Jamstack c’est une architecture, de se point de vue la les deux solutions sont déjà différentes.
             Rentrons quand même dans le sujet et voyons qu’est-ce qui justifierait de choisir une approche plutôt qu’une autre pour un futur projet web. 
@@ -190,11 +190,11 @@
 
         <h2>Exemple de site Jamstack :</h2>
         <h3>Louis vuitton</h3>
-        <img class="my-10 mx-auto" src="~/static/img/louis-vuitton.png" width="600" height="284" alt="">
+        <img class="my-10 mx-auto" src="~/static/img/louis-vuitton.png" width="600" height="284" alt="" loading="lazy">
         <a href="https://louisvuitton.com" target="_blank" rel="noopener" class="underline hover:text-blue">Voir le site</a>
 
         <h3>Envato</h3>
-        <img class="my-10 mx-auto" src="~/static/img/envato.png" width="600" height="283" alt="">
+        <img class="my-10 mx-auto" src="~/static/img/envato.png" width="600" height="283" alt="" loading="lazy">
         <a href="https://envato.com/" target="_blank" rel="noopener" class="underline hover:text-blue">Voir le site</a>
 
         <h2>Quand utiliser l’approche Jamstack ?</h2>
