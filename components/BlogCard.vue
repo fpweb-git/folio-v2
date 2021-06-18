@@ -1,6 +1,6 @@
 <template>
     <article class="blog-card shadow-lg bg-white">
-        <img :src="src" :alt="alt" width="300" height="200">
+        <img :src="src" :alt="alt" width="300" height="200" loading="lazy">
         <div class="flex flex-col justify-center items-center p-4">
             <h2 class="font-bold text-xl mb-1">{{ title }}</h2>
             <p class="inline-block text-sm font-medium mb-1">{{description.substring(0, 69) + ' ...'}}</p>

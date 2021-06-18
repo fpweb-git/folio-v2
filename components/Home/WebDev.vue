@@ -4,7 +4,8 @@
             <span class="text-blue font-semibold text-lg inline-block mb-6 text-center">Réalisons ensemble votre projet</span>
             <h2 class="text-center font-extrabold text-4xl sm:text-5xl mb-8 sm:mb-10">Developpement web</h2>
             <p class="text-center max-w-3xl mb-14">
-                Principalement orienté <strong>Frontend</strong>, j’ai aussi des connaissances solident en <strong>Backend</strong> notamment avec NodeJS. Je suis donc en mesure de réaliser vos projets <strong>Fullstack</strong>. Passionné par tout ce qui touche au métier du web, je suis en constante veille afin d'utiliser les dernières technologies pour garantir sécurité et performances au maximum !
+                Principalement orienté <strong>Frontend</strong>, je maitrise aussi la partie <strong>Backend</strong> notamment avec NodeJS. Je suis donc en mesure de réaliser vos projets <strong>Fullstack</strong>.
+                <br class="hidden md:block"> Passionné par tout ce qui touche au métier du web, je suis en constante veille afin de toujours m’améliorer pour proposer le meilleur et le plus fiable !
             </p>
             <div class="site-building-container">
                 <svg  viewBox="0 0 551 449" fill="none" xmlns="http://www.w3.org/2000/svg" id="site-building">
@@ -196,7 +197,7 @@
                 <div class="max-w-lg mr-3">
                     <h3 class="text-3xl sm:text-4xl font-extrabold mb-8">Stack :</h3>
                     <p class="mb-10">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus ornare vestibulum. Praesent nec purus vulputate, luctus ante id, tincidunt sem. Pellentesque dignissim at eros vitae sodales. 
+                        En tant que développeur web je m’aitrise <strong>Html, Css et Javascript</strong>. Pour ce qui est frontend j’utilise <strong>Vue.js</strong> et <strong>Nuxt.js</strong>. Pour la partie Backend je suis sur du <strong>Node.js</strong>. Je m’aitrise aussi <strong>MongoDB, MySql</strong> et différents outils comme <strong>Sass, TailwindCSS, Bootstrap, Gsap</strong> etc...  
                     </p>
                     <NuxtLink to="/" class="text-blue underline font-medium flex items-center">
                         Services

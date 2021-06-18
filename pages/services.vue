@@ -4,32 +4,32 @@
             <div class="px-4">
                 <h1 class="text-center font-semibold text-lg text-blue mb-3">Mes services</h1>
                 <h2 class="text-3xl md:text-5xl font-extrabold text-center max-w-xl mx-auto mb-8">Developpement web freelance</h2>
-                <p class="max-w-2xl text-center mx-auto mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus ornare vestibulum.</p>
+                <p class="max-w-2xl text-center mx-auto mb-6">Je propose mes services pour les particuliers, entreprises et agences de communications.</p>
             </div>
             <ul class="grid grid-cols-1 md:grid-cols-2 w-max mx-auto gap-14 my-14">
                 <ServicesCard 
                 :src="require('~/static/img/site-vitrine.jpg')"
                 alt="site vitrine"
                 title="Site vitrine | blog"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus ornare vestibulum."
+                text="Des sites modernes et performants qui maximise vos chances d’etre bien référencé. Je vous accompagne dans tout les processus de création et le suivi."
                 />
                 <ServicesCard 
                 :src="require('~/static/img/site-vitrine.jpg')"
-                alt="site vitrine"
-                title="Site vitrine | blog"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus ornare vestibulum."
+                alt="Ecommerce"
+                title="Ecommerce"
+                text="Votre site marchand sur mesure, construit avec des solutions réputé comme shopify ou snipcart."
                 />
                 <ServicesCard 
                 :src="require('~/static/img/site-vitrine.jpg')"
-                alt="site vitrine"
-                title="Site vitrine | blog"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus ornare vestibulum."
+                alt="Developpement frontend"
+                title="Developpement frontend"
+                text="Je propose mes services de devellopement sur des projets frontend, n’hésitez pas a me contacter pour en savoir plus."
                 />
                 <ServicesCard 
                 :src="require('~/static/img/site-vitrine.jpg')"
-                alt="site vitrine"
-                title="Site vitrine | blog"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus ornare vestibulum."
+                alt="Web design"
+                title="Web design"
+                text="Création de maquette pour obtenir un rendu moderne à votre image; tout en respectant les critères nécessaire a une excellente expérience utilisateur."
                 />
             </ul>
         </div>

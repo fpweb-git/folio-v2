@@ -7,7 +7,7 @@
             <Lighthouse class="mt-14 sm:mt-20"/>
         </div>
 
-        <div class="py-20 lg:py-40 w-full bg-lightgray">
+        <div class="py-20 lg:py-48 w-full bg-lightgray">
             <div class="main-container px-4 flex justify-between items-center flex-col xl:flex-row">
                 <div class="max-w-xl">
                     <h3 class="text-3xl sm:text-4xl font-extrabold mb-8">Les avantages de l’architecture Jamstack</h3>
@@ -24,32 +24,32 @@
 
                 <div class="relative advantage-card-block mb-0 md:mb-20 lg:mb-0 mt-20 md:mt-40 xl:mt-0 grid grid-cols-2 gap-6 sm:gap-10 md:block">
                     <div class="dashed-box absolute md:relative"></div>
-                    <div class="w-48 h-48 p-4 bg-white shadow-lg rounded-lg relative md:absolute md:-top-24 md:left-20">
-                        <img src="~/static/img/lock-icon.svg" alt="cadena icon" class="mb-2">
-                        <h4 class="font-bold mb-2">Sécurité</h4>
+                    <div class="w-48 h-56 p-4 bg-white shadow-lg rounded-lg relative md:absolute md:-top-24 md:left-20">
+                        <img src="~/static/img/lock-icon.svg" alt="cadena icon" loading="lazy" class="mb-2">
+                        <h4 class="font-bold mb-1">Sécurité</h4>
                         <p class="text-xs">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus ornare vestibulum.
+                            Les pages sont servit de façon statique en limitant au maximum le nombre d’appels serveurs. Les services externes sont sécurisé par les fournisseurs.
                         </p>
                     </div>
-                    <div class="w-48 h-48 p-4 bg-white shadow-lg rounded-lg relative md:absolute md:-bottom-10 md:-left-20">
-                        <img src="~/static/img/scale-icon.svg" alt="layer icon" class="mb-2">
-                        <h4 class="font-bold mb-2">Sécurité</h4>
+                    <div class="w-48 h-56 p-4 bg-white shadow-lg rounded-lg relative md:absolute md:-bottom-24 md:-left-20">
+                        <img src="~/static/img/scale-icon.svg" alt="layer icon" loading="lazy" class="mb-2">
+                        <h4 class="font-bold mb-1">Fléxible</h4>
                         <p class="text-xs">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus ornare vestibulum.
+                            Hébergement simple, et migrable très facilement. Quasiment plus de problemes de compatibilité avec les services externes.
                         </p>
                     </div>
-                    <div class="w-48 h-48 p-4 bg-white shadow-lg rounded-lg relative md:absolute md:-bottom-24 md:right-16">
-                        <img src="~/static/img/stable-icon.svg" alt="cloud icon" class="mb-2">
-                        <h4 class="font-bold mb-2">Sécurité</h4>
+                    <div class="w-48 h-56 p-4 bg-white shadow-lg rounded-lg relative md:absolute md:-bottom-32 md:right-16">
+                        <img src="~/static/img/stable-icon.svg" alt="cloud icon" loading="lazy" class="mb-2">
+                        <h4 class="font-bold mb-1">Stable</h4>
                         <p class="text-xs">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus ornare vestibulum.
+                            Un CDN s’adapte automatiquement et de façon quasi illimiter au nombre de visiteur. Fini les serveurs qui lachent après un fort afflux. 
                         </p>
                     </div>
-                    <div class="w-48 h-48 p-4 bg-white shadow-lg rounded-lg relative md:absolute md:-top-12 md:-right-20">
-                        <img src="~/static/img/eclair-icon.svg" alt="speed icon" class="mb-2">
-                        <h4 class="font-bold mb-2">Sécurité</h4>
+                    <div class="w-48 h-56 p-4 bg-white shadow-lg rounded-lg relative md:absolute md:-top-20 md:-right-20">
+                        <img src="~/static/img/eclair-icon.svg" alt="speed icon" loading="lazy" class="mb-2">
+                        <h4 class="font-bold mb-1">Performant</h4>
                         <p class="text-xs">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus ornare vestibulum.
+                            Toutes les pages étant déjà disponibles sur un CDN, les performances sont donc très élevées sans avoir besoin d’une d'infrastructure coûteuse ou complexe.
                         </p>
                     </div>
                 </div>
@@ -64,34 +64,34 @@
                     <div class="w-auto sm:w-80 mx-0 sm:mx-auto flex flex-col">
                         <h4 class="text-lime font-bold text-2xl mb-10 text-center sm:text-left">Headless CMS :</h4>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-10 sm:gap-y-6">
-                            <img src="~/static/img/brand/forestry.svg" width="148" height="31" alt="forestry logo" class="mx-auto sm:mx-0">
-                            <img src="~/static/img/brand/strapi.svg" width="125" height="33" alt="" class="mx-auto sm:mx-0">
-                            <img src="~/static/img/brand/storyblock.svg" width="146" height="39" alt="" class="mx-auto sm:mx-0">
-                            <img src="~/static/img/brand/netlify-cms.svg" width="148" height="38" alt="" class="mx-auto sm:mx-0">
+                            <img src="~/static/img/brand/forestry.svg" loading="lazy" width="148" height="31" alt="forestry logo" class="mx-auto sm:mx-0">
+                            <img src="~/static/img/brand/strapi.svg" loading="lazy" width="125" height="33" alt="" class="mx-auto sm:mx-0">
+                            <img src="~/static/img/brand/storyblock.svg" loading="lazy" width="146" height="39" alt="" class="mx-auto sm:mx-0">
+                            <img src="~/static/img/brand/netlify-cms.svg" loading="lazy" width="148" height="38" alt="" class="mx-auto sm:mx-0">
                         </div>
                     </div>
 
                     <div class="w-auto sm:w-80 mx-0 sm:mx-auto flex flex-col">
                         <h4 class="text-lime font-bold text-2xl mb-10 text-center sm:text-left">Framework :</h4>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-10 sm:gap-y-6">
-                            <img src="~/static/img/brand/nuxt.svg" width="148" height="31" alt="" class="mx-auto sm:mx-0">
-                            <img src="~/static/img/brand/gridsome.svg" width="148" height="28" alt="" class="mx-auto sm:mx-0">
+                            <img src="~/static/img/brand/nuxt.svg" loading="lazy" width="148" height="31" alt="" class="mx-auto sm:mx-0">
+                            <img src="~/static/img/brand/gridsome.svg" loading="lazy" width="148" height="28" alt="" class="mx-auto sm:mx-0">
                         </div>
                     </div>
 
                     <div class="w-auto sm:w-80 mx-0 sm:mx-auto flex flex-col">
                         <h4 class="text-lime font-bold text-2xl mb-10 text-center sm:text-left">Déploiement :</h4>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-10 sm:gap-y-6 w-auto sm:w-max">
-                            <img src="~/static/img/brand/netlify.svg" width="113" height="40" alt="" class="mx-auto sm:mx-0">
-                            <img src="~/static/img/brand/cloudflare-pages.svg" width="115" height="45" alt="" class="mx-auto sm:mx-0">
+                            <img src="~/static/img/brand/netlify.svg" loading="lazy" width="113" height="40" alt="" class="mx-auto sm:mx-0">
+                            <img src="~/static/img/brand/cloudflare-pages.svg" loading="lazy" width="115" height="45" alt="" class="mx-auto sm:mx-0">
                         </div>
                     </div>
 
                     <div class="w-auto sm:w-80 mx-0 sm:mx-auto flex flex-col">
                         <h4 class="text-lime font-bold text-2xl mb-10 text-center sm:text-left">Solution Ecommerce :</h4>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-10 sm:gap-y-6">
-                            <img src="~/static/img/brand/snipcart.svg" width="148" height="32" alt="" class="mx-auto sm:mx-0">
-                            <img src="~/static/img/brand/shopify.svg" width="114" height="33" alt="" class="mx-auto sm:mx-0">
+                            <img src="~/static/img/brand/snipcart.svg" loading="lazy" width="148" height="32" alt="" class="mx-auto sm:mx-0">
+                            <img src="~/static/img/brand/shopify.svg" loading="lazy" width="114" height="33" alt="" class="mx-auto sm:mx-0">
                         </div>
                     </div>
                 </div>

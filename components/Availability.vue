@@ -1,7 +1,7 @@
 <template>
     <div class="availability-widget shadow-xl z-40 cursor-pointer hidden sm:flex" @click="openWidget($event)">
         <div class="relative">
-            <img src="~/static/img/availability-avatar.png" width="40" height="40" alt="avatar disponibilité">
+            <img src="~/static/img/availability-avatar.png" loading="lazy" width="40" height="40" alt="avatar disponibilité">
             <div class="maru ml-2 rounded-full bg-orange shadow pointer-events-none"></div>
         </div>
         <div class="ml-3 pointer-events-none">

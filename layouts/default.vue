@@ -61,6 +61,11 @@ button:focus {
   margin: 0 auto;
 }
 
+.content-container{
+  max-width: 805px;
+  margin: 0 auto;
+}
+
 .lime-btn-out{
   border: 2px solid #D0F224;
   padding: 0.25rem 1.5rem;
