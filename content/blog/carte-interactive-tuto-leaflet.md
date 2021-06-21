@@ -1,7 +1,7 @@
 ---
 permalink: carte-leaflet
 title: Carte interactive tuto Leaflet
-date: 2021-03-19T09:15:11.429Z
+date: 2021-06-21T07:03:13.125Z
 cover: /img/upload/leaflet-cover.jpg
 description: Petit projet simple pour créer une carte interactive avec Leaflet
   et des données au format Geojson. On va y ajouter des marqueurs personnalisés
