@@ -7,9 +7,9 @@ description: Petit projet simple pour créer une carte interactive avec Leaflet
   et des données au format Geojson. On va y ajouter des marqueurs personnalisés
   et une fonction pour filtrer nos différents restaurants !
 metaTitle: Carte interactive tuto Leaflet
-metaDescription: Petit projet simple pour créer une carte interactive avec
-  Leaflet et des données au format Geojson. On va y ajouter des marqueurs
-  personnalisés et une fonction pour filtrer nos différents restaurants !
+metaDescription: Projet simple pour créer une carte interactive avec Leaflet et
+  des données au format Geojson. On va ajouter des marqueurs personnalisés et
+  une fonction pour filtrer nos différents restaurants.
 ---
 ## Le résultat
 
