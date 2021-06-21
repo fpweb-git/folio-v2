@@ -58,10 +58,6 @@ Voici donc à quoi ressemble ce format, on peut voir une liste d'objet nommé "f
 Maintenant que nous avons notre fichier JSON on va commencer à créer notre carte.\
 Pour ajouter la librairie, on va simplement utiliser un CDN.
 
-```html
-<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-```
-
 On vient ensuite créer notre fichier css et notre fichier javascript.\
 Je passe l'étape du html et du css et je vous mets le code juste ici :
 
