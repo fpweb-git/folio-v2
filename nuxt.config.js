@@ -40,7 +40,13 @@ export default {
 
   axios: {},
 
-  content: {},
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prismjs/themes/prism-oceanic.css'
+      }
+    }
+  },
 
   build: {
   },

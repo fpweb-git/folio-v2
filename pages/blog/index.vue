@@ -3,9 +3,12 @@
         <div class="main-container py-10 sm:py-20">
             <div class="px-4">
                 <span class="inline-block font-semibold text-lg text-blue mb-10">Developpement, design, technologies</span>
-                <h1 class="text-3xl md:text-5xl font-extrabold mb-10">Blog</h1>
+                <h1 class="text-3xl md:text-5xl font-extrabold">Blog</h1>
             </div>
-            <ul class="grid grid-cols-1 md:grid-cols-3 w-max gap-28 my-14 px-4">
+            <div class="px-4 mt-8">
+                {{ articles.length == 1 ? articles.length + ' article' : articles.length + ' articles' }}
+            </div>
+            <ul class="grid grid-cols-1 md:grid-cols-3 w-max gap-14 my-14 px-4 mx-auto md:mx-0">
                 <li v-for="article in articles" :key="article.permalink">
                     <BlogCard
                         :src="article.cover"

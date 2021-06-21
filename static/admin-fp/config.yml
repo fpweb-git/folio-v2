@@ -47,9 +47,9 @@ collections:
     create: true
     format: 'frontmatter'
     fields:
+      - { label: 'Permalink', name: 'permalink', widget: 'string', required: true }
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: 'Date', name: 'date', widget: 'datetime', date_format: "YYYY-MM-DD", time_format: "HH:mm",  default: "" }
-      - { label: 'Permalink', name: 'permalink', widget: 'string', required: true }
       - { label: 'Cover image', name: 'cover', widget: 'image', required: true, allow_multiple: false }
       - { label: 'Description(card)', name: 'description', widget: 'string', required: true }
       - { label: 'Content', name: 'body', widget: 'markdown', required: true }

@@ -110,4 +110,84 @@ button:focus {
         border-bottom: 1px solid #D0F224;
     }
 }
+
+.nuxt-content{
+
+  .note{
+    padding: 1rem;
+    margin: 2.5rem 0;
+    background: #FAFAFF;
+    border-left: 0.5rem solid #2F2E8B;
+  }
+
+  p{
+      margin-bottom: 1rem;
+  }
+
+  a{
+    font-weight: 600;
+    text-decoration: underline;
+    color: #507CED;
+  }
+  h2{
+      font-weight: 800;
+      font-size: 36px;
+      margin: 3rem 0;
+  }
+  h3{
+      font-weight: 600;
+      font-size: 24px;
+      position: relative;
+      width: fit-content;
+      z-index: 10;
+      margin: 2rem 0 1.5rem 0;
+      &::after{
+          content: "";
+          position: absolute;
+          width:  calc(100% + 10px);
+          height: 9px;
+          bottom: 6px;
+          left: 0px;
+          background: #D0F224;
+          z-index: -1;
+      }
+  }
+
+  h4{
+      font-size: 20px;
+      font-weight: 700;
+      color: #2F2E8B;
+      margin: 2.5rem 0 1.2rem 0;
+  }
+
+  pre{
+    margin: 2rem 0;
+  }
+
+  img{
+    margin: 2.5rem auto;
+  }
+
+  @media only screen and (max-width: 768px) {
+      h2{
+          font-weight: 800;
+          font-size: 28px;
+          margin: 2.5rem 0 2rem 0;
+      }
+      h3{
+      font-size: 20px;
+      margin: 2rem 0 1.5rem 0;
+      font-weight: 700;
+        &::after{
+            height: 7px;
+            bottom: 4px;
+            width: 100%;
+        }
+        h4{
+            font-size: 18px;
+            color: #2F2E8B;
+        }
+      }
+  }
+}
 </style>
