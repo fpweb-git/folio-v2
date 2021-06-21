@@ -127,7 +127,7 @@ button:focus {
   a{
     font-weight: 600;
     text-decoration: underline;
-    color: #507CED;
+    color: #2F2E8B;
   }
   h2{
       font-weight: 800;

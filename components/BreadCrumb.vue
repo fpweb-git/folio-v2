@@ -4,9 +4,10 @@
             <ul class="flex items-center text-sm">
                 <li class="flex ariane-link">
                     <NuxtLink to="/" aria-label="Home" class="flex items-center justify-center">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.5 15V10.5H10.5V15H14.25V9H16.5L9 2.25L1.5 9H3.75V15H7.5Z" fill="#2F2E8B"/>
-                        </svg>
+                        </svg> -->
+                        <img src="~/static/icon/home.svg" alt="">
                     </NuxtLink>
                 </li>
                 <li class="flex ariane-link">
