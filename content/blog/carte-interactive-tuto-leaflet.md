@@ -11,10 +11,6 @@ metaDescription: Projet simple pour créer une carte interactive avec Leaflet et
   des données au format Geojson. On va ajouter des marqueurs personnalisés et
   une fonction pour filtrer nos différents restaurants.
 ---
-## Le résultat
-
-<iframe src="https://fpweb-git.github.io/leaflet-article/index.html" width="100%" height="450" frameborder="0"></iframe>
-
 ## Obtenir des données Geojson
 
 Avant de créer notre carte il nous faut le contenu. Dans cette exemple j'ai utilisé le site  <a href="https://geojson.io" target="_blank" rel="noopener">geojson.io</a>,
