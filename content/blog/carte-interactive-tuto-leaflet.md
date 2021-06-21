@@ -304,6 +304,10 @@ const filterAll = document.getElementById("all");
 
 Ici, on vient définir notre premier bouton comme checké par défaut, puis pour chaque changement sur nos input on vient ajouter ou retirer nos différents layers !
 
+## Le résultat
+
+<iframe src="https://fpweb-git.github.io/leaflet-article/index.html" width="100%" height="450" frameborder="0"></iframe>
+
 Et voilà, j'espère que ce petit tuto vous aura aidé !
 
 Le <a href="https://github.com/fpweb-git/leaflet-article" target="_blank" rel="noopener">lien</a> vers le code source.
