@@ -24,15 +24,13 @@
                     </div>
                 </div>
                 <p class="text-sm mb-3">
-                    Ancien commerçant, j’ai vendu mon magasin après 5 ans d’activité pour me reconvertir.<br>
-                    Mordu de développement depuis plusieurs années j’ai su me donner les moyens d’en faire mon métier.<br>
-                    Le web est un outil qui apporte tellement d'opportunités que je voulais faire partie de l’aventure.
+                    Ancien gérant de magasin, mordu de développement depuis plusieurs années j’ai su me donner les moyens d’en faire mon métier. Le web est un outil qui apporte tellement d'opportunités que je voulais faire partie de l’aventure.
                 </p>
                 <p class="text-sm mb-3">
-                    Le développement, pour moi c’est avant tout d’avoir la capacité d’apprendre, d’appliquer et d’anticiper les futurs besoins des utilisateurs et les nouvelles technologie futur.
+                    Le développement, pour moi c’est avant tout d’avoir la capacité d’apprendre, d’appliquer et d’anticiper les futurs besoins des utilisateurs et les nouvelles technologies futures.
                 </p>
                 <p class="text-sm">
-                    J’adore aussi travailler sur le design, la création 3D. <br> Être capable de réailser un projet de A à Z seul c’est pour moi une vrai liberté !
+                    J’adore aussi travailler sur le design, la création 3D ! Être capable de réailser un projet de A à Z seul c’est pour moi une vraie liberté !
                 </p>
             </div>
         </div>

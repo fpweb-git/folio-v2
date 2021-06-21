@@ -4,10 +4,10 @@
             <div class="max-w-xl mr-3">
                 <h1 class="text-white font-extrabold text-4xl sm:text-6xl">
                     <span class="text-lime text-lg inline-block mb-1 hero-lime-text">François Parrou</span><br>
-                    Developpeur web<br>
+                    Développeur web<br>
                     Vue.js, Jamstack
                 </h1>
-                <p class="text-white text-base sm:text-lg my-8">Je developpe des sites web et apps <strong class="text-lime hero-lime-text">modernes</strong> et <strong class="text-lime hero-lime-text">rapides</strong> en utilisant Vue.js et Nuxt.js.</p>
+                <p class="text-white text-base sm:text-lg my-8">Je développe des sites web et apps <strong class="text-lime hero-lime-text">modernes</strong> et <strong class="text-lime hero-lime-text">rapides</strong> en utilisant Vue.js et Nuxt.js.</p>
                 <NuxtLink to="/services/">
                     <button aria-label="contact" class="lime-btn mb-8 hero-btn">Mes services</button>
                 </NuxtLink>

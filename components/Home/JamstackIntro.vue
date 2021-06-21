@@ -1,9 +1,9 @@
 <template>
     <section>
         <div class="py-10 md:py-20 flex flex-col items-center main-container px-4">
-            <span class="text-blue font-semibold text-lg inline-block mb-6">Prenez une longeur d’avance</span>
-            <h2 class="text-center max-w-lg font-extrabold text-4xl sm:text-5xl mb-8 sm:mb-10">Developpement Jamstack</h2>
-            <p class="text-center max-w-3xl">La rapidité de votre site est <strong>l’un des facteurs de référencement les plus important pour Google</strong>, elle améliore l'expérience utilisateur. Un site performant aura donc forcement plus de chance de se potionner en haut de liste des résultats du moteur de recherche.</p>
+            <span class="text-blue font-semibold text-lg inline-block mb-6">Prenez une longueur d’avance</span>
+            <h2 class="text-center max-w-lg font-extrabold text-4xl sm:text-5xl mb-8 sm:mb-10">Développement Jamstack</h2>
+            <p class="text-center max-w-3xl">La rapidité de votre site est <strong>l’un des facteurs de référencement les plus importants pour Google,</strong> elle améliore l'expérience utilisateur. Un site performant aura donc forcêment plus de chances de se positionner en haut de liste dans les résultats du moteur de recherche.</p>
             <Lighthouse class="mt-14 sm:mt-20"/>
         </div>
 
@@ -12,7 +12,7 @@
                 <div class="max-w-xl">
                     <h3 class="text-3xl sm:text-4xl font-extrabold mb-8">Les avantages de l’architecture Jamstack</h3>
                     <p class="mb-10">
-                        La Jamstack (Javascript, API, Markup), est une architecture de développement Web moderne qui met l'accent sur l'utilisation de CDN et le fait de découpler différents services pour obtenir des sites performants, robustes et sécurisés en utilisant des frameworks modernes.
+                        La Jamstack (Javascript, API, Markup) est une architecture de développement Web qui met l'accent sur l'utilisation de CDN et le fait de découpler différents services pour obtenir des sites performants, robustes et sécurisés en utilisant des frameworks modernes.
                     </p>
                     <NuxtLink to="/" class="text-blue underline font-medium flex items-center">
                         En savoir plus
@@ -28,21 +28,21 @@
                         <img src="~/static/img/lock-icon.svg" alt="cadena icon" loading="lazy" class="mb-2">
                         <h4 class="font-bold mb-1">Sécurité</h4>
                         <p class="text-xs">
-                            Les pages sont servit de façon statique en limitant au maximum le nombre d’appels serveurs. Les services externes sont sécurisé par les fournisseurs.
+                            Les pages sont servies de façon statique en limitant au maximum le nombre d’appels serveurs. Les services externes sont sécurisés par les fournisseurs.
                         </p>
                     </div>
                     <div class="w-48 h-56 p-4 bg-white shadow-lg rounded-lg relative md:absolute md:-bottom-24 md:-left-20">
                         <img src="~/static/img/scale-icon.svg" alt="layer icon" loading="lazy" class="mb-2">
-                        <h4 class="font-bold mb-1">Fléxible</h4>
+                        <h4 class="font-bold mb-1">Fléxibilité</h4>
                         <p class="text-xs">
-                            Hébergement simple, et migrable très facilement. Quasiment plus de problemes de compatibilité avec les services externes.
+                            Hébergement simple, et migrable très facilement. Quasiment plus de problèmes de compatibilité avec les services externes.
                         </p>
                     </div>
                     <div class="w-48 h-56 p-4 bg-white shadow-lg rounded-lg relative md:absolute md:-bottom-32 md:right-16">
                         <img src="~/static/img/stable-icon.svg" alt="cloud icon" loading="lazy" class="mb-2">
-                        <h4 class="font-bold mb-1">Stable</h4>
+                        <h4 class="font-bold mb-1">Stabilité</h4>
                         <p class="text-xs">
-                            Un CDN s’adapte automatiquement et de façon quasi illimiter au nombre de visiteur. Fini les serveurs qui lachent après un fort afflux. 
+                            Un CDN s’adapte automatiquement et de façon quasi illimitée au nombre de visiteurs. Finis les serveurs qui lâchent après un fort afflux.  
                         </p>
                     </div>
                     <div class="w-48 h-56 p-4 bg-white shadow-lg rounded-lg relative md:absolute md:-top-20 md:-right-20">
