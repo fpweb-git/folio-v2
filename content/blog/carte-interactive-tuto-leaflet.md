@@ -17,7 +17,7 @@ metaDescription: Petit projet simple pour créer une carte interactive avec
 
 ## Obtenir des données Geojson
 
-Avant de créer notre carte il nous faut le contenu. Dans cette exemple j'ai utilisé le site  <a href="https://geojson.io" target="_blank" rel="noopener"> geojson.io</a>,
+Avant de créer notre carte il nous faut le contenu. Dans cette exemple j'ai utilisé le site  <a href="https://geojson.io" target="_blank" rel="noopener">geojson.io</a>,
 j'ai placé mes marqueurs et j'ai ajouté 3 propriétés supplémentaires "name", "type", "adress".
 On va pouvoir utiliser ces propriétés pour notre filtre et afficher les informations relatives à chaque marqueur.
 
@@ -136,7 +136,7 @@ Je passe l'étape du html et du css et je vous mets le code juste ici :
 
 Rentrons maintenant dans le vif du sujet, commençons par afficher notre carte et nos marqueurs.
 
-<p class="note">Voici le lien de la documention de <a href="https://leafletjs.com/" target="_blank" rel="noopener"> leaflet</a></p>
+<p class="note">Voici le lien de la documention de <a href="https://leafletjs.com/" target="_blank" rel="noopener">leaflet</a></p>
 
 Première étape définir notre carte et la tile (fond de carte)
 
@@ -183,7 +183,7 @@ const baseIcon = new L.Icon({
 });
 ```
 
-<p class="note">Retrouvez la documentation pour définir les marqueurs juste <a href="https://leafletjs.com/reference-1.7.1.html#icon" target="_blank" rel="noopener"> ici</a></p>
+<p class="note">Retrouvez la documentation pour définir les marqueurs juste <a href="https://leafletjs.com/reference-1.7.1.html#icon" target="_blank" rel="noopener">ici</a></p>
 
 Maintenant on va venir créer 2 variables que nous laissons pour l'instant vide.
 
@@ -253,7 +253,7 @@ Voici le <a href="https://leafletjs.com/reference-1.7.1.html#geojson" target="_b
 
 Ici on vient prendre nos données et on les sépare en 3 différents Layer : tous les restaurants, les restaurants italiens et les restaurants népalais.\
 On définit ensuite l'icône utilisée pour chaque marqueur puis on vient les ajouter au lancement à notre layer qui affiche tous les restaurants.\
-Ensuite, on vient définir la vue de notre carte en utilisant la fonction fitBounds qui permet de centrer automatiquement la carte par rapport à nos marqueurs, plus d'info juste <a href="https://leafletjs.com/reference-1.7.1.html#bounds" target="_blank" rel="noopener"> ici</a>
+Ensuite, on vient définir la vue de notre carte en utilisant la fonction fitBounds qui permet de centrer automatiquement la carte par rapport à nos marqueurs, plus d'info juste <a href="https://leafletjs.com/reference-1.7.1.html#bounds" target="_blank" rel="noopener">ici</a>
 
 On vient définir notre "onEachFeature".
 
@@ -310,4 +310,4 @@ Ici, on vient définir notre premier bouton comme checké par défaut, puis pour
 
 Et voilà, j'espère que ce petit tuto vous aura aidé !
 
-Le <a href="https://github.com/fpweb-git/leaflet-article" target="_blank" rel="noopener"> lien</a> vers le code source.
+Le <a href="https://github.com/fpweb-git/leaflet-article" target="_blank" rel="noopener">lien</a> vers le code source.
