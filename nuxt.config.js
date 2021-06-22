@@ -3,17 +3,19 @@ export default {
   target: 'static',
 
   head: {
-    title: 'folio-V2',
+    title: 'François parrou | développeur web freelance Vue.js et Jamstack',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'fr'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'apple-touch-icon', sizes:'180x180', href: '/apple-touch-icon.png' },
+      { rel: 'icon', type: 'image/png', sizes:'32x32', href: '/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes:'16x16', href: '/favicon-16x16.png' }
     ]
   },
 
@@ -27,12 +29,10 @@ export default {
   components: true,
 
   buildModules: [
-    // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     'nuxt-gsap-module'
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios',
     '@nuxt/content',

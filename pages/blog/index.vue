@@ -2,7 +2,7 @@
     <main class="bg-lightgray">
         <div class="main-container py-10 sm:py-20">
             <div class="px-4">
-                <span class="inline-block font-semibold text-lg text-blue mb-10">Developpement, design, technologies</span>
+                <span class="inline-block font-semibold text-lg text-blue mb-10">Développement, design, technologies</span>
                 <h1 class="text-3xl md:text-5xl font-extrabold">Blog</h1>
             </div>
             <div class="px-4 mt-8">
@@ -32,6 +32,34 @@ export default {
         .fetch()
 
         return { articles }
+    },
+    data(){
+        return {
+            baseUrl : 'https://francois-parrou.com'
+        }
+    },
+    head () {
+        return {
+            title: "Dev blog | développement web",
+            meta: [
+                { hid: 'description', name: 'description', content: "Retrouvez des articles sur le développement web (Html, Css, Javascript, Vue, React etc..), le design et les nouvelles technologies." },
+
+                {property:'og:type', content:'website'},
+                {property:'og:site_name', content:'françois-parrou.com'},
+                {property:'og:url', content: this.baseUrl + '/blog/' },
+                {property:'og:title', content: "Dev blog | développement web"},
+                {property:'og:description', content: "Retrouvez des articles sur le développement web (Html, Css, Javascript, Vue, React etc..), le design et les nouvelles technologies." },
+                {property:'og:image', content: this.baseUrl + '/img/og-picture.jpg' },
+
+                {property:'twitter:card', content:'summary_large_image'},
+                {property:'twitter:url', content: this.baseUrl + '/blog/'},
+                {property:'twitter:title', content: "Dev blog | développement web"},
+                {property:'twitter:description', content: "Retrouvez des articles sur le développement web (Html, Css, Javascript, Vue, React etc..), le design et les nouvelles technologies." },
+                {property:'twitter:image', content: this.baseUrl + '/img/og-picture.jpg'},
+
+                {hid: 'robots', name:'robots', content:'max-image-preview:large'}
+            ],
+        }
     },
 }
 </script>

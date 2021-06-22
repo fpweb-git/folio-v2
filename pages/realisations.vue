@@ -29,5 +29,33 @@ export default {
 
         return { realisations }
     },
+    data(){
+        return {
+            baseUrl : 'https://francois-parrou.com'
+        }
+    },
+    head () {
+        return {
+            title: "Mes projets et réalisations",
+            meta: [
+                { hid: 'description', name: 'description', content: "Retrouvez sur cette page un aperçu de mon travail personnel et professionnel." },
+
+                {property:'og:type', content:'website'},
+                {property:'og:site_name', content:'françois-parrou.com'},
+                {property:'og:url', content: this.baseUrl + '/realisations/' },
+                {property:'og:title', content: "Mes projets et réalisations"},
+                {property:'og:description', content: "Retrouvez sur cette page un aperçu de mon travail personnel et professionnel." },
+                {property:'og:image', content: this.baseUrl + '/img/og-picture.jpg' },
+
+                {property:'twitter:card', content:'summary_large_image'},
+                {property:'twitter:url', content: this.baseUrl + '/realisations/'},
+                {property:'twitter:title', content: "Mes projets et réalisations"},
+                {property:'twitter:description', content: "Retrouvez sur cette page un aperçu de mon travail personnel et professionnel." },
+                {property:'twitter:image', content: this.baseUrl + '/img/og-picture.jpg'},
+
+                {hid: 'robots', name:'robots', content:'max-image-preview:large'}
+            ],
+        }
+    },
 }
 </script>

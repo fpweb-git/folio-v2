@@ -35,3 +35,36 @@
         </div>
     </main>
 </template>
+
+<script>
+export default {
+    data(){
+        return {
+            baseUrl : 'https://francois-parrou.com'
+        }
+    },
+    head () {
+        return {
+            title: "Mes services de développement web",
+            meta: [
+                { hid: 'description', name: 'description', content: "Découvrez mes services de développement Web freelance : Site vitrine, Blog, Ecommerce, Web design et Développement Frontend avec Vue.js." },
+
+                {property:'og:type', content:'website'},
+                {property:'og:site_name', content:'françois-parrou.com'},
+                {property:'og:url', content: this.baseUrl + '/services/' },
+                {property:'og:title', content: "Mes services de développement web"},
+                {property:'og:description', content: "Découvrez mes services de développement Web freelance : Site vitrine, Blog, Ecommerce, Web design et Développement Frontend avec Vue.js." },
+                {property:'og:image', content: this.baseUrl + '/img/og-picture.jpg' },
+
+                {property:'twitter:card', content:'summary_large_image'},
+                {property:'twitter:url', content: this.baseUrl + '/services/'},
+                {property:'twitter:title', content: "Mes services de développement web"},
+                {property:'twitter:description', content: "Découvrez mes services de développement Web freelance : Site vitrine, Blog, Ecommerce, Web design et Développement Frontend avec Vue.js." },
+                {property:'twitter:image', content: this.baseUrl + '/img/og-picture.jpg'},
+
+                {hid: 'robots', name:'robots', content:'max-image-preview:large'}
+            ],
+        }
+    },
+}
+</script>

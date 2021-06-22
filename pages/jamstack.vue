@@ -216,6 +216,39 @@
     </main>
 </template>
 
+<script>
+export default {
+    data(){
+        return {
+            baseUrl : 'https://francois-parrou.com'
+        }
+    },
+    head () {
+        return {
+            title: "L'architecture Jamstack, explication et comparaison avec les technologies de développement web classique",
+            meta: [
+                { hid: 'description', name: 'description', content: "Le terme Jamstack ne concerne pas une technologie en particulier. Il s'agit d'une architecture de développement Web moderne qui met l'accent sur l'utilisation de CDN et le fait de découpler différents services pour obtenir des sites très performants et sécurisés." },
+
+                {property:'og:type', content:'website'},
+                {property:'og:site_name', content:'françois-parrou.com'},
+                {property:'og:url', content: this.baseUrl + '/jamstack/' },
+                {property:'og:title', content: "L'architecture Jamstack, explication et comparaison avec les technologies de développement web classique"},
+                {property:'og:description', content: "Le terme Jamstack ne concerne pas une technologie en particulier. Il s'agit d'une architecture de développement Web moderne qui met l'accent sur l'utilisation de CDN et le fait de découpler différents services pour obtenir des sites très performants et sécurisés." },
+                {property:'og:image', content: this.baseUrl + '/img/og-picture-jamstack.jpg' },
+
+                {property:'twitter:card', content:'summary_large_image'},
+                {property:'twitter:url', content: this.baseUrl + '/jamstack/'},
+                {property:'twitter:title', content: "L'architecture Jamstack, explication et comparaison avec les technologies de développement web classique"},
+                {property:'twitter:description', content: "Le terme Jamstack ne concerne pas une technologie en particulier. Il s'agit d'une architecture de développement Web moderne qui met l'accent sur l'utilisation de CDN et le fait de découpler différents services pour obtenir des sites très performants et sécurisés." },
+                {property:'twitter:image', content: this.baseUrl + '/img/og-picture-jamstack.jpg'},
+
+                {hid: 'robots', name:'robots', content:'max-image-preview:large'}
+            ],
+        }
+    },
+}
+</script>
+
 <style lang="scss" scoped>
 p{
     margin-bottom: 1rem;

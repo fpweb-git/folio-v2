@@ -19,7 +19,7 @@
                 </ul>
             </div>
             <div class="hidden lg:flex items-center space-x-8">
-                <NuxtLink to="/login/" class="text-white text-sm nav-links">Connexion</NuxtLink>
+                <!-- <NuxtLink to="/login/" class="text-white text-sm nav-links">Connexion</NuxtLink> -->
                 <button aria-label="contact" class="lime-btn-out">Contact</button>
             </div>
             <!-- mobile -->
@@ -40,7 +40,7 @@
                         <li class="nav-links"><NuxtLink to="/realisations/">Réalisation</NuxtLink></li>
                         <li class="nav-links"><NuxtLink to="/jamstack/">Jamstack</NuxtLink></li>
                         <li class="nav-links"><NuxtLink to="/blog/">Blog</NuxtLink></li>
-                        <li><NuxtLink to="/login/" class="nav-links">Connexion</NuxtLink></li>
+                        <!-- <li><NuxtLink to="/login/" class="nav-links">Connexion</NuxtLink></li> -->
                     </ul>
                     <div>
                         <button aria-label="contact" class="lime-btn-out mt-4">Contact</button>

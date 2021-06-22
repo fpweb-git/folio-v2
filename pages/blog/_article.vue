@@ -42,7 +42,7 @@ export default {
                 { hid: 'description', name: 'description', content: this.article.metaDescription },
 
                 {property:'og:type', content:'website'},
-                {property:'og:site_name', content:'François-parrou.com'},
+                {property:'og:site_name', content:'françois-parrou.com'},
                 {property:'og:url', content: this.baseUrl + `/blog/${this.article.permalink}/` },
                 {property:'og:title', content: this.article.metaTitle },
                 {property:'og:description', content: this.article.metaDescription },

@@ -17,9 +17,10 @@
         <div v-if="loadingContent" class="z-10 right-2 top-1 absolute flex-1 flex justify-center items-center overflow-hidden">
             <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
         </div>
-        <ul v-if="posts.length" class="z-10 absolute py-4 flex-1 bg-white overflow-hidden w-full">
+        <ul v-if="posts.length" class="z-10 absolute flex-1 bg-white overflow-hidden w-full">
             <li @click="resetSearch()" v-for="post of posts" :key="post.slug">
-                <NuxtLink :to="`/blog/${post.permalink}/`" class="flex border-b border-gray-400 py-3 text-deepdark font-semibold text-sm px-2 items-center leading-5 hover:text-blue hover:border-blue transition ease-in-out duration-150">
+                <NuxtLink :to="`/blog/${post.permalink}/`" class="flex flex-col border-b border-gray-400 py-4 text-dark font-semibold text-sm px-2 leading-5 hover:text-blue hover:border-blue transition ease-in-out duration-150">
+                    <span class="inline-block text-xs font-gray-500 font-normal mb-2 border-l-4 pl-1 border-blue">Article de blog</span>
                     {{ post.title }}
                 </NuxtLink>
             </li>
