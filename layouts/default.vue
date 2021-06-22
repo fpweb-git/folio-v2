@@ -1,9 +1,10 @@
 <template>
-  <div class="overflow-hidden">
+  <div class="relative overflow-hidden">
     <div v-if="!pageIsLoaded " class="fixed w-full h-full bg-white z-50"></div>
     <Navbar />
     <Availability />
     <Nuxt />
+    <ContactForm />
     <Gotop />
     <Cta />
     <Footer />
