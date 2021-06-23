@@ -14,19 +14,19 @@
                 text="Des sites modernes et performants qui maximise vos chances d’etre bien référencé. Je vous accompagne dans tout les processus de création et le suivi."
                 />
                 <ServicesCard 
-                :src="require('~/static/img/site-vitrine.jpg')"
+                :src="require('~/static/img/site-ecommerce.jpg')"
                 alt="Ecommerce"
                 title="Ecommerce"
                 text="Votre site marchand sur mesure, construit avec des solutions réputé comme shopify ou snipcart."
                 />
                 <ServicesCard 
-                :src="require('~/static/img/site-vitrine.jpg')"
+                :src="require('~/static/img/dev-front.jpg')"
                 alt="Developpement frontend"
                 title="Developpement frontend"
                 text="Je propose mes services de devellopement sur des projets frontend, n’hésitez pas a me contacter pour en savoir plus."
                 />
                 <ServicesCard 
-                :src="require('~/static/img/site-vitrine.jpg')"
+                :src="require('~/static/img/web-design.jpg')"
                 alt="Web design"
                 title="Web design"
                 text="Création de maquette pour obtenir un rendu moderne à votre image; tout en respectant les critères nécessaire a une excellente expérience utilisateur."

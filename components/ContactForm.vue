@@ -1,7 +1,7 @@
 <template>
     <transition name="fade">
-        <div v-if="contactFormIsOpen" @click="outCloseForm($event)" class="fixed flex justify-center items-center top-0 left-0 w-full h-full bg-white bg-opacity-90 z-50 transition form-bg" id="contact-form">
-            <div class="flex justify-center items-center">
+        <div v-if="contactFormIsOpen" @click="outCloseForm($event)" class="fixed flex justify-center items-center top-0 left-0 w-full h-full bg-white bg-opacity-90 z-50 transition cursor-pointer form-bg" id="contact-form">
+            <div class="flex justify-center items-center cursor-default">
                 <div class="form-container bg-white border border-gray-300 rounded-lg shadow-lg p-6 sm:p-12 ">
                     <div class="flex justify-between items-center">
                         <h2 class="text-deepdark relative flex flex-col text-4xl font-extrabold text-left">Contact</h2>
