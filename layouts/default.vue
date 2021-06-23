@@ -22,7 +22,7 @@ export default {
     window.addEventListener("load", () => {
       this.pageIsLoaded  = true
     });
-  }
+  },
 }
 </script>
 
@@ -191,4 +191,12 @@ button:focus {
       }
   }
 }
+
+// .page-enter-active {
+//   transition: opacity 0.4s ease-in-out, transform 0.5s ease;
+// }
+// .page-enter {
+//   opacity: 0;
+//   transform: translateY(100px);
+// }
 </style>

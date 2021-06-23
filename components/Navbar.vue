@@ -20,7 +20,7 @@
             </div>
             <div class="hidden lg:flex items-center space-x-8">
                 <!-- <NuxtLink to="/login/" class="text-white text-sm nav-links">Connexion</NuxtLink> -->
-                <button aria-label="contact" class="lime-btn-out" @click="openForm">Contact</button>
+                <button aria-label="contact" class="lime-btn-out" @click="$nuxt.$emit('show-form')">Contact</button>
             </div>
             <!-- mobile -->
             <div class="z-40 block lg:hidden">
@@ -43,7 +43,7 @@
                         <!-- <li><NuxtLink to="/login/" class="nav-links">Connexion</NuxtLink></li> -->
                     </ul>
                     <div>
-                        <button aria-label="contact" class="lime-btn-out mt-4" @click="openForm">Contact</button>
+                        <button aria-label="contact" class="lime-btn-out mt-4" @click="$nuxt.$emit('show-form')">Contact</button>
                     </div>
                 </div>
             </transition>
@@ -61,18 +61,14 @@ export default {
     },
     methods:{
         openSearch(){
-            this.searchIsOpen ? this.searchIsOpen = false : this.searchIsOpen = true
+            this.searchIsOpen = !this.searchIsOpen
         },
         openRspNav(){
-            this.rspIsOpen ? this.rspIsOpen = false : this.rspIsOpen = true
+            this.rspIsOpen = !this.rspIsOpen
             const burger = document.querySelector('.burger')
 
             burger.classList.toggle('opened')
         },
-        openForm(){
-            const form = document.querySelector('#contact-form')
-            form.classList.toggle('hidden')
-        }
     },
     watch: {
         '$route': function(){

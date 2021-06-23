@@ -250,6 +250,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.page-enter-active {
+    transition: opacity 0.4s ease-in-out, transform 0.5s ease;
+}
+.page-enter {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
 p{
     margin-bottom: 1rem;
 }
@@ -294,15 +302,15 @@ h4{
     font-size: 20px;
     margin: 2rem 0 1.5rem 0;
     font-weight: 700;
-    &::after{
-        height: 7px;
-        bottom: 4px;
-        width: 100%;
+        &::after{
+            height: 7px;
+            bottom: 4px;
+            width: 100%;
+        }
+        h4{
+            font-size: 18px;
+            color: #2F2E8B;
+        }
     }
-    h4{
-        font-size: 18px;
-        color: #2F2E8B;
-    }
-}
 }
 </style>

@@ -30,7 +30,7 @@
                 </div>
             </div>
 
-            <div class="relative z-20 self-center lg:self-end">
+            <div class="relative z-10 self-center lg:self-end">
                 <img src="~/static/img/hero-pic.jpg" class="hero-profil-pic" width="420px" height="485" alt="françois parrou photo de profil" loading="lazy">
                 <img src="~/static/img/element-hero.png" class="absolute top-0 left-0 hero-element" width="420px" height="485" alt="element de décoration" loading="lazy">
             </div>
