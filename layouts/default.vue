@@ -13,9 +13,9 @@
 <script>
 export default {
   data() {
-        return {
-            pageIsLoaded : false
-        }
+      return {
+          pageIsLoaded : false
+      }
     },
   mounted(){ 
     this.pageIsLoaded  = true

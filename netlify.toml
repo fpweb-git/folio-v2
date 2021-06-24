@@ -1,0 +1,55 @@
+[build]
+command = "npm run generate"
+publish = "dist"
+
+[[redirects]]
+from = "https://francois-parrou.netlify.app/*"
+to = "https://francois-parrou.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://francois-parrou.netlify.com/*"
+to = "https://francois-parrou.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "http://francois-parrou.netlify.com/*"
+to = "https://francois-parrou.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://www.francois-parrou.netlify.app/*"
+to = "https://francois-parrou.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "http://www.francois-parrou.netlify.app/*"
+to = "https://francois-parrou.com/:splat"
+status = 301
+force = true
+
+
+[[redirects]]
+from = "/index.html"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/*/index.html"
+to = "/:splat"
+status = 301
+force = true
+
+
+[[redirects]]
+from = "/blog/*/index.html"
+to = "/blog/:splat"
+status = 301
+force = true
+
+

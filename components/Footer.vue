@@ -3,14 +3,14 @@
         <div class="main-container py-14 px-4 items-center">
             <div class="flex items-center justify-between">
                 <div class="flex items-center">
-                    <img src="~/static/img/logo.svg" alt="françois parrou logo" class="mr-6">
+                    <img src="~/static/img/logo.svg" alt="françois parrou logo" class="mr-3 sm:mr-6">
                     <nav>
-                        <ul class="hidden md:flex text-lightgray space-x-6 items-center text-sm">
-                            <li class="nav-links"><NuxtLink to="/">Accueil</NuxtLink></li>
-                            <li class="nav-links"><NuxtLink to="/services/">Services</NuxtLink></li>
-                            <li class="nav-links"><NuxtLink to="/realisations/">Réalisation</NuxtLink></li>
-                            <li class="nav-links"><NuxtLink to="/jamstack/">Jamstack</NuxtLink></li>
-                            <li class="nav-links"><NuxtLink to="/blog/">Blog</NuxtLink></li>
+                        <ul class="flex text-lightgray space-x-0 md:space-x-6 items-center text-sm">
+                            <li class="nav-links hidden md:flex"><NuxtLink to="/">Accueil</NuxtLink></li>
+                            <li class="nav-links hidden md:flex"><NuxtLink to="/services/">Services</NuxtLink></li>
+                            <li class="nav-links hidden md:flex"><NuxtLink to="/realisations/">Réalisation</NuxtLink></li>
+                            <li class="nav-links hidden md:flex"><NuxtLink to="/jamstack/">Jamstack</NuxtLink></li>
+                            <li class="nav-links hidden md:flex"><NuxtLink to="/blog/">Blog</NuxtLink></li>
                             <li class="nav-links"><NuxtLink to="/mentions-legales/">Mentions légales</NuxtLink></li>
                         </ul>
                     </nav>              

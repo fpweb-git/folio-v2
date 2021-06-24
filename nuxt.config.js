@@ -36,6 +36,7 @@ export default {
   modules: [
     '@nuxtjs/axios',
     '@nuxt/content',
+    '@nuxtjs/sitemap'
   ],
 
   axios: {},
@@ -62,5 +63,21 @@ export default {
       scrollTo: false,
       scrollTrigger: true
     },
+  },
+
+  sitemap: {
+    hostname: 'https://francois-parrou.com',
+    trailingSlash: true,
+    exclude: [
+      '/success',
+      '/404',
+      '/admin-fp',
+      '/mentions-legales',
+    ],
+    async routes () {
+      const { $content } = require('@nuxt/content')
+      const files = await $content('blog').only(['permalink']).fetch()
+      return files.map(file => '/blog/'+file.permalink+'/')
+    }
   },
 }
