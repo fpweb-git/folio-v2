@@ -1,17 +1,17 @@
 backend:
-  # name: git-gateway
-  # branch: master
+  name: git-gateway
+  branch: master
 
   # local dev
-  name: github
-  repo: fpweb-git/folio-v2
+  # name: github
+  # repo: fpweb-git/folio-v2
 
 # publish_mode: editorial_workflow
 show_preview_links : false
 locale: 'fr'
 media_folder: static/img/upload
 public_folder: /img/upload
-# logo_url: /img/logo_magenta.svg
+# logo_url: /img/logo.svg
 
 collections:
   - name: 'realisations'
