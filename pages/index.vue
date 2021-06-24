@@ -4,6 +4,7 @@
     <HomeAbout />
     <HomeJamstackIntro />
     <HomeWebDev />
+    <Cta />
   </div>
 </template>
 
@@ -16,7 +17,7 @@ export default {
     },
   head () {
         return {
-            title: 'François parrou | développeur web freelance Vue.js et Jamstack',
+            title: 'François parrou | développeur web freelance Vue.js, Nuxt.js et Jamstack',
             meta: [
                 { hid: 'description', name: 'description', content: "Développeur web freelance, je propose mes services pour vos projets Vue.js. Je maitrise également l'architecture Jamstack, je peux donc vous proposer la création de sites web performants et sécurisés." },
 

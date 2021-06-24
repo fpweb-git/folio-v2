@@ -213,6 +213,7 @@
         <p>
             Il n'est pas toujours nécessaire de migrer vos vieux sites avec beaucoup de trafic, mais si vous en commencez un nouveau projet, l'approche Jamstack est à grandement considérer.
         </p>
+        <Cta />
     </main>
 </template>
 

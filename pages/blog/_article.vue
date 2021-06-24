@@ -9,6 +9,7 @@
             <nuxt-content :document="article" />
         </article>
         <PrevNext :prev="prev" :next="next" />
+        <Cta />
     </div>
 </template>
 

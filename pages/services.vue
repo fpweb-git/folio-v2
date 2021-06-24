@@ -21,8 +21,8 @@
                 />
                 <ServicesCard 
                 :src="require('~/static/img/dev-front.jpg')"
-                alt="Developpement frontend"
-                title="Developpement frontend"
+                alt="Développement frontend"
+                title="Développement frontend"
                 text="Je propose mes services de devellopement sur des projets frontend, n’hésitez pas a me contacter pour en savoir plus."
                 />
                 <ServicesCard 
@@ -33,6 +33,7 @@
                 />
             </ul>
         </div>
+        <Cta />
     </main>
 </template>
 

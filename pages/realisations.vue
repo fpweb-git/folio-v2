@@ -16,6 +16,7 @@
                 </li>
             </ul>
         </div>
+        <Cta />
     </main>
 </template>
 
