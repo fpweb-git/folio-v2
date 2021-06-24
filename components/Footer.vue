@@ -11,7 +11,7 @@
                             <li class="nav-links hidden md:flex"><NuxtLink to="/realisations/">Réalisation</NuxtLink></li>
                             <li class="nav-links hidden md:flex"><NuxtLink to="/jamstack/">Jamstack</NuxtLink></li>
                             <li class="nav-links hidden md:flex"><NuxtLink to="/blog/">Blog</NuxtLink></li>
-                            <li class="nav-links"><NuxtLink to="/mentions-legales/">Mentions légales</NuxtLink></li>
+                            <li class="nav-links"><NuxtLink to="/mentions-legales/">Informations légales</NuxtLink></li>
                         </ul>
                     </nav>              
                 </div>
