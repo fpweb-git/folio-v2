@@ -44,7 +44,7 @@ export default {
   content: {
     markdown: {
       prism: {
-        theme: 'prismjs/themes/prism-oceanic.css'
+        theme: '~/assets/css/prism-oceanic.css'
       }
     }
   },
