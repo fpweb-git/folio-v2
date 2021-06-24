@@ -4,7 +4,7 @@
             <div class="px-4">
                 <h1 class="text-3xl md:text-5xl font-extrabold text-center max-w-xl mx-auto mb-20">Mes réalisations</h1>
             </div>
-            <ul class="grid grid-cols-1 md:grid-cols-2 w-max mx-auto gap-14 my-14">
+            <ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-max mx-auto gap-14 my-14">
                 <li v-for="realisation in realisations" :key="realisation.title">
                     <RealisationsCard
                         :src="realisation.cover"
