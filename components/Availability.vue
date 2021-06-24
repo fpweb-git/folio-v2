@@ -50,10 +50,10 @@ export default {
             const gsap = this.$gsap
             const toggleWidget = gsap.timeline()
             if(event.target.style.cssText === 'transform: translate(0px, 0px);'){
-                toggleWidget.to('.availability-widget', { duration: 0.3, x:195, ease: 'Elastic.easeOut.config(1, 0.5)'})
+                toggleWidget.to('.availability-widget', { duration: 0.3, x: 195, ease: 'Elastic.easeOut.config(1, 0.5)'})
             }
             else{
-                toggleWidget.to('.availability-widget', { duration: 0.3, x:0, ease: 'Elastic.easeOut.config(1, 0.5)'})
+                toggleWidget.to('.availability-widget', { duration: 0.3, x: 0, ease: 'Elastic.easeOut.config(1, 0.5)'})
             }
         }
     }

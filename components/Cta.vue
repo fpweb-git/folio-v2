@@ -1,7 +1,7 @@
 <template>
     <section class="h-80 flex flex-col justify-center items-center bg-white" id="cta-box">
         <h2 class="text-3xl md:text-4xl font-extrabold text-blue text-center">Une question ?<br class="block sm:hidden"> Un projet ?</h2>
-        <button class="dark-btn cta-banner-btn mt-10">Contactez-moi</button>
+        <button @click="$nuxt.$emit('show-form')" class="dark-btn cta-banner-btn mt-10">Contactez-moi</button>
     </section>
 </template>
 
