@@ -38,7 +38,7 @@
                                 <textarea required name="message" rows="3" class="shadow-sm focus:ring-blue focus:border-blue mt-1 block w-full sm:text-sm border-gray-300 rounded-md text-sm" placeholder="Votre message..."></textarea>
                             </div>
                         </div>
-                        <div class="my-8 sm:mt-16">
+                        <div class="my-8">
                             <button class="my-5 w-full flex justify-center items-center text-white py-3 border bg-dark hover:text-lime rounded font-medium">Envoyer</button>
                         </div>
                     </form>
