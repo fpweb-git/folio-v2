@@ -15,6 +15,7 @@
                         </ul>
                     </nav>              
                 </div>
+                
                 <div class="flex space-x-6">
                     <a href="https://www.linkedin.com/in/fran%C3%A7ois-parrou-21367b56/" target="_blank" rel="noopener" title="lien linkedin" >
                         <svg width="18" height="20" viewBox="0 0 18 20" fill="none" class="fill-current text-white text-opacity-70 hover:text-opacity-100 transition ease duration-300" xmlns="http://www.w3.org/2000/svg">
